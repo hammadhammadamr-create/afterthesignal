@@ -1,0 +1,259 @@
+{
+  "apollo-lm": {
+    "name": "Módulo Lunar Apolo",
+    "title": "Módulo Lunar Apolo",
+    "timeline": [
+      {
+        "id": "apollo-11-launch",
+        "title": "Lanzamiento del Apolo 11",
+        "description": "El Apolo 11 despegó del Centro Espacial Kennedy para iniciar el viaje que llevaría a los primeros seres humanos a la superficie lunar."
+      },
+      {
+        "id": "apollo-11-landing",
+        "title": "Primer aterrizaje humano en la Luna",
+        "description": "El módulo lunar Eagle aterrizó en la región del Mar de la Tranquilidad."
+      },
+      {
+        "id": "apollo-12-landing",
+        "title": "Aterrizaje del Apolo 12",
+        "description": "El módulo lunar del Apolo 12 aterrizó en la región del Océano de las Tormentas."
+      },
+      {
+        "id": "apollo-14-landing",
+        "title": "Aterrizaje del Apolo 14",
+        "description": "El Apolo 14 aterrizó en la región de Fra Mauro, en la superficie lunar."
+      },
+      {
+        "id": "apollo-15-landing",
+        "title": "Aterrizaje del Apolo 15",
+        "description": "El Apolo 15 aterrizó cerca del valle Hadley y fue la primera misión en utilizar un vehículo lunar."
+      },
+      {
+        "id": "apollo-16-landing",
+        "title": "Aterrizaje del Apolo 16",
+        "description": "El Apolo 16 aterrizó en la región de Descartes, en la superficie lunar."
+      },
+      {
+        "id": "apollo-17-landing",
+        "title": "Último aterrizaje lunar del programa Apolo",
+        "description": "El Apolo 17 realizó el último aterrizaje tripulado en la Luna del programa Apolo."
+      }
+    ],
+    "place": "Mar de la Tranquilidad y llanuras lunares",
+    "kicker": "Aterrizajes del Apolo 11–17",
+    "summary": "Las misiones de aterrizaje que llevaron a los primeros exploradores humanos a la superficie lunar y dejaron módulos permanentes en seis lugares de la Luna.",
+    "code": "ARTEFACTO LUNAR 01 // APOLO 11–17",
+    "coords": "00.6741° N, 23.4730° E (Base de la Tranquilidad)",
+    "years": "1969 — 1972 (6 aterrizajes)",
+    "signal": "Separación de la etapa de ascenso",
+    "subtitle": "Los módulos de aterrizaje octogonales, recubiertos de oro y láminas metalizadas de Kapton, sirvieron como vehículos de descenso y plataformas de lanzamiento para doce astronautas durante seis históricas misiones lunares.",
+    "discoveries": "Permitieron recoger 382 kilogramos de rocas y muestras del subsuelo lunar, contribuyendo a demostrar que la Luna se formó tras un gigantesco impacto con la Tierra primitiva hace más de 4.500 millones de años.",
+    "ending": "Cuando cada tripulación encendió el motor de ascenso para regresar a la órbita lunar, la pesada etapa de descenso quedó deliberadamente sobre el regolito lunar como plataforma permanente.",
+    "legacy": "Cada etapa de descenso lleva una placa conmemorativa de acero inoxidable. Los módulos permanecen preservados en el vacío lunar y han sido fotografiados desde la órbita por el Lunar Reconnaissance Orbiter (LRO)."
+  },
+  "alsep": {
+    "name": "Paquetes científicos ALSEP",
+    "title": "Paquetes científicos ALSEP",
+    "timeline": [
+      {
+        "id": "alsep-apollo-12",
+        "title": "Despliegue de la primera estación ALSEP",
+        "description": "Los astronautas del Apolo 12 desplegaron la primera estación científica completa del sistema ALSEP sobre la superficie lunar."
+      },
+      {
+        "id": "alsep-apollo-14",
+        "title": "Estación del Apolo 14",
+        "description": "La segunda estación científica fue desplegada en el lugar de aterrizaje del Apolo 14, en la región de Fra Mauro."
+      },
+      {
+        "id": "alsep-apollo-15",
+        "title": "Estación del Apolo 15",
+        "description": "La tercera estación científica fue desplegada cerca de la región Hadley-Apennine."
+      },
+      {
+        "id": "alsep-apollo-16",
+        "title": "Estación del Apolo 16",
+        "description": "Los astronautas del Apolo 16 desplegaron otra estación científica en la región de Descartes."
+      },
+      {
+        "id": "alsep-apollo-17",
+        "title": "Última estación ALSEP",
+        "description": "El Apolo 17 desplegó la quinta y última estación en la región de Taurus-Littrow."
+      },
+      {
+        "id": "alsep-termination",
+        "title": "Fin de las operaciones científicas",
+        "description": "La NASA terminó las operaciones de las estaciones ALSEP restantes después de años recopilando y transmitiendo datos científicos."
+      }
+    ],
+    "place": "Estaciones lunares de los Apolos 12, 14, 15, 16 y 17",
+    "kicker": "Experimentos Apolo en la superficie lunar",
+    "summary": "Estaciones geofísicas alimentadas por energía nuclear que los astronautas del programa Apolo instalaron en la Luna. Registraron terremotos lunares, viento solar y temperatura interna durante años después de la partida de los astronautas.",
+    "code": "ARTEFACTO LUNAR 02 // APOLO 12–17",
+    "coords": "Varios lugares de aterrizaje lunar",
+    "years": "1969 — 30 de septiembre de 1977",
+    "signal": "Orden de apagado (1977)",
+    "subtitle": "Observatorios científicos autónomos alimentados por radioisótopos, instalados manualmente por los astronautas para estudiar el entorno lunar mucho después de su partida.",
+    "discoveries": "Registraron más de 12.000 eventos sísmicos, incluidos terremotos lunares e impactos de meteoritos. También estudiaron la tenue exosfera lunar y la estructura de su corteza y manto.",
+    "ending": "Después de funcionar durante años, los controladores en la Tierra enviaron la orden final de apagado el 30 de septiembre de 1977 debido a la reasignación del presupuesto.",
+    "legacy": "Los reflectores láser pasivos instalados junto a los experimentos siguen reflejando pulsos láser enviados desde observatorios terrestres, lo que permite medir el alejamiento anual de la Luna de aproximadamente 3,8 centímetros."
+  },
+  "surveyor-3": {
+    "name": "Surveyor 3",
+    "title": "Sonda de aterrizaje Surveyor 3",
+    "timeline": [
+      {
+        "id": "surveyor-launch",
+        "title": "Lanzamiento",
+        "description": "La sonda Surveyor 3 despegó desde Cabo Kennedy a bordo de un cohete Atlas-Centaur."
+      },
+      {
+        "id": "surveyor-landing",
+        "title": "Aterrizaje suave en la Luna",
+        "description": "Surveyor 3 aterrizó con éxito en el Océano de las Tormentas y comenzó a transmitir imágenes y datos de la superficie lunar."
+      },
+      {
+        "id": "surveyor-last-contact",
+        "title": "Último contacto",
+        "description": "La NASA recibió la última comunicación de Surveyor 3 después de que concluyeran sus operaciones en la superficie lunar."
+      },
+      {
+        "id": "surveyor-apollo-12",
+        "title": "Visita de los astronautas del Apolo 12",
+        "description": "Pete Conrad y Alan Bean se acercaron a Surveyor 3, la examinaron y recuperaron algunas de sus piezas para estudiarlas en la Tierra."
+      }
+    ],
+    "place": "Océano de las Tormentas",
+    "kicker": "Océano de las Tormentas // Sonda de aterrizaje",
+    "summary": "La sonda robótica que demostró que el suelo lunar podía soportar el peso de las misiones Apolo y que fue visitada por seres humanos en otro mundo dos años después.",
+    "code": "ARTEFACTO LUNAR 03 // OCÉANO DE LAS TORMENTAS",
+    "coords": "03.0155° S, 23.4180° O",
+    "years": "Abril de 1967 — mayo de 1967",
+    "signal": "Congelación durante la noche lunar (mayo de 1967)",
+    "subtitle": "Una sonda robótica de aterrizaje con tres patas, equipada con una pala mecánica para recoger muestras del suelo y una cámara de televisión. Transmitió 6.315 imágenes desde la superficie lunar.",
+    "discoveries": "Confirmó que el regolito lunar era lo suficientemente firme como para soportar el peso de un módulo lunar tripulado, en lugar de hundirse en una capa profunda de polvo.",
+    "ending": "Dejó de comunicarse después de soportar temperaturas extremadamente bajas, cercanas a los -150 °C, durante su primera noche lunar de dos semanas en mayo de 1967.",
+    "legacy": "En noviembre de 1969, los astronautas del Apolo 12, Pete Conrad y Alan Bean, aterrizaron a unos 180 metros de distancia y caminaron hasta Surveyor 3 para examinarla. Fue la única visita humana a una sonda situada en otro mundo."
+  },
+  "opportunity": {
+    "name": "Rover Opportunity",
+    "title": "Rover Opportunity",
+    "timeline": [
+      {
+        "id": "opportunity-launch",
+        "title": "Lanzamiento hacia Marte",
+        "description": "El rover Opportunity despegó desde Cabo Cañaveral a bordo de un cohete Delta II."
+      },
+      {
+        "id": "opportunity-landing",
+        "title": "Aterrizaje en Marte",
+        "description": "Opportunity aterrizó en Meridiani Planum y comenzó una misión diseñada para durar 90 soles marcianos."
+      },
+      {
+        "id": "opportunity-marathon",
+        "title": "Superación de la distancia de un maratón",
+        "description": "Opportunity se convirtió en el primer vehículo construido por el ser humano en recorrer una distancia equivalente a un maratón en otro mundo."
+      },
+      {
+        "id": "opportunity-last-contact",
+        "title": "Última comunicación",
+        "description": "El rover envió su última señal después de que una tormenta de polvo global bloqueara la luz solar que llegaba a sus paneles solares."
+      },
+      {
+        "id": "opportunity-end",
+        "title": "Anuncio oficial del fin de la misión",
+        "description": "La NASA declaró oficialmente el fin de la misión Opportunity después de numerosos intentos por restablecer el contacto."
+      }
+    ],
+    "place": "Valle de la Perseverancia, Meridiani Planum",
+    "kicker": "MER-B // Valle de la Perseverancia",
+    "summary": "Diseñado para una misión de 90 soles marcianos, Opportunity recorrió 45 kilómetros por las llanuras de Marte durante casi 15 años, hasta que una tormenta de polvo global interrumpió sus comunicaciones.",
+    "code": "ARTEFACTO MARCIANO 04 // MER-B",
+    "coords": "02.28° S, 354.52° E (Valle de la Perseverancia)",
+    "years": "Enero de 2004 — 10 de junio de 2018",
+    "signal": "Tormenta de polvo global (sol 5111)",
+    "subtitle": "Diseñado para durar 90 soles marcianos, este rover solar del tamaño de un carrito de golf funcionó durante 5.111 soles, casi 15 años terrestres, y recorrió una distancia superior a la de un maratón.",
+    "discoveries": "Descubrió pequeñas esferas de hematita apodadas «arándanos» y vetas de yeso dentro del cráter Endeavour. Estos hallazgos aportaron pruebas de que el antiguo Marte tuvo agua líquida.",
+    "ending": "En junio de 2018, una de las tormentas de polvo más intensas registradas en décadas bloqueó la luz solar sobre el Valle de la Perseverancia y dejó sin energía suficiente a los paneles solares de Opportunity.",
+    "legacy": "Transformó la exploración de Marte: de seguir las huellas del agua a buscar señales de vida antigua, allanando el camino para los rovers Curiosity y Perseverance."
+  },
+  "ingenuity": {
+    "name": "Helicóptero Ingenuity",
+    "title": "Helicóptero Ingenuity",
+    "timeline": [
+      {
+        "id": "ingenuity-arrival",
+        "title": "Llegada a Marte",
+        "description": "El helicóptero Ingenuity llegó al cráter Jezero sujeto a la parte inferior del rover Perseverance."
+      },
+      {
+        "id": "ingenuity-deployment",
+        "title": "Despliegue en la superficie",
+        "description": "Ingenuity fue colocado sobre la superficie marciana para prepararse para su vuelo experimental."
+      },
+      {
+        "id": "ingenuity-first-flight",
+        "title": "Primer vuelo",
+        "description": "Ingenuity realizó el primer vuelo motorizado y controlado en otro planeta."
+      },
+      {
+        "id": "ingenuity-final-flight",
+        "title": "Vuelo número 72",
+        "description": "Ingenuity completó su vuelo número 72 y último después de que las palas del rotor sufrieran daños durante el aterrizaje."
+      },
+      {
+        "id": "ingenuity-mission-end",
+        "title": "Fin de la misión",
+        "description": "La NASA anunció el fin de la misión Ingenuity después de que el helicóptero perdiera su capacidad de volar."
+      }
+    ],
+    "place": "Colinas Valinor, cráter Jezero",
+    "kicker": "Helicóptero marciano // Cráter Jezero",
+    "summary": "La primera aeronave en lograr un vuelo motorizado y controlado en otro mundo. Completó 72 vuelos históricos antes de quedar inmovilizada por daños en una de sus palas.",
+    "code": "ARTEFACTO MARCIANO 05 // HELICÓPTERO",
+    "coords": "18.50° N, 77.41° E (Colinas Valinor)",
+    "years": "Abril de 2021 — 18 de enero de 2024",
+    "signal": "Daños en las palas del rotor (vuelo 72)",
+    "subtitle": "Con un peso de apenas 1,8 kilogramos en la Tierra, Ingenuity demostró que era posible realizar vuelos controlados en la atmósfera marciana, cuya densidad es inferior al 1 % de la terrestre.",
+    "discoveries": "Fue diseñada para realizar cinco vuelos de prueba en 30 días, pero terminó convirtiéndose en un explorador aéreo para Perseverance. Completó 72 vuelos y recorrió aproximadamente 17 kilómetros.",
+    "ending": "Durante el aterrizaje de su vuelo número 72, el 18 de enero de 2024, sus palas de fibra de carbono chocaron contra la superficie de una duna, poniendo fin a su capacidad de volar.",
+    "legacy": "Incluso después de finalizar sus vuelos, Ingenuity sigue siendo un logro histórico que demostró la posibilidad del vuelo autónomo en otro mundo y abrió el camino a futuros proyectos de exploración aérea."
+  },
+  "insight": {
+    "name": "Sonda InSight",
+    "title": "Sonda de aterrizaje InSight",
+    "timeline": [
+      {
+        "id": "insight-launch",
+        "title": "Lanzamiento hacia Marte",
+        "description": "La sonda InSight inició su viaje a Marte para estudiar la estructura interna del planeta."
+      },
+      {
+        "id": "insight-landing",
+        "title": "Aterrizaje en Marte",
+        "description": "InSight aterrizó con éxito en Elysium Planitia y comenzó los preparativos para activar sus instrumentos científicos."
+      },
+      {
+        "id": "insight-first-marsquake",
+        "title": "Detección del primer terremoto marciano",
+        "description": "Los científicos detectaron el primer evento sísmico en Marte utilizando el sismómetro de InSight."
+      },
+      {
+        "id": "insight-mission-end",
+        "title": "Fin de la misión",
+        "description": "La NASA puso fin a la misión InSight después de que el polvo acumulado en sus paneles solares redujera la energía disponible para mantener las comunicaciones."
+      }
+    ],
+    "place": "Elysium Planitia",
+    "kicker": "Elysium Planitia // Sonda sísmica",
+    "summary": "Un observatorio geofísico estacionario que escuchó los pulsos de Marte, registró más de 1.300 terremotos marcianos y ayudó a revelar la estructura interna del planeta antes de que el polvo cubriera sus paneles solares.",
+    "code": "ARTEFACTO MARCIANO 06 // ESTACIÓN GEOFÍSICA",
+    "coords": "04.5024° N, 135.6234° E (Elysium Planitia)",
+    "years": "Noviembre de 2018 — 15 de diciembre de 2022",
+    "signal": "Acumulación de polvo en los paneles solares",
+    "subtitle": "La primera misión dedicada a estudiar el interior profundo de Marte desplegó un sismómetro de alta sensibilidad, protegido por una cubierta, directamente sobre las llanuras de Elysium.",
+    "discoveries": "Registró 1.319 eventos sísmicos marcianos, incluido uno de magnitud 4,7. Sus datos permitieron estudiar la corteza, el manto y el núcleo metálico líquido de Marte.",
+    "ending": "El polvo rojo se acumuló gradualmente sobre sus dos paneles solares circulares durante cuatro años, hasta que la sonda ya no pudo generar suficiente energía para mantener las comunicaciones. Envió su última imagen en diciembre de 2022.",
+    "legacy": "Proporcionó una visión sin precedentes de la estructura tridimensional del interior de un planeta terrestre más allá de la Tierra."
+  }
+}

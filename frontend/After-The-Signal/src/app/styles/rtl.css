@@ -1,0 +1,34 @@
+html[lang="ar"] body,
+html[lang="ar"] body * {
+    font-family: "Cairo", "Inter", sans-serif;
+    letter-spacing: normal !important;
+}
+
+html[dir="rtl"] [data-popover="lang"],
+html[dir="rtl"] [data-popover="age"] {
+    right: auto;
+    left: 0;
+}
+
+html[dir="rtl"] svg:has(path[d="M14 5l7 7m0 0l-7 7m7-7H3"]) {
+    transform: scaleX(-1);
+}
+
+html[dir="rtl"] .menu-option .dot {
+    margin-inline-start: 0.5rem;
+}
+
+/* الأسهم اللي بتتحرك مع الـ hover لازم تتحرك ناحية اليسار في RTL */
+html[dir="rtl"] .group:hover .group-hover\:translate-x-1 {
+    --tw-translate-x: -0.25rem;
+}
+
+/* محاذاة النص تتعكس في العربي */
+html[dir="rtl"] .text-left { text-align: right; }
+html[dir="rtl"] .text-right { text-align: left; }
+
+/* الأرقام والإحداثيات تفضل بترتيبها الصحيح جوه الجملة العربية */
+html[dir="rtl"] [data-modal="coords"],
+html[dir="rtl"] [data-modal="years"] {
+    unicode-bidi: plaintext;
+}

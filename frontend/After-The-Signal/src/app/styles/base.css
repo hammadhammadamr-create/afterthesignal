@@ -1,0 +1,156 @@
+body {
+  background-color: rgb(var(--rgb-main));
+  color: rgb(var(--rgb-text));
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.border-subtle {
+  border-color: rgb(var(--rgb-border) / 0.14);
+}
+.border-cyan-subtle {
+  border-color: rgb(var(--rgb-cyan) / 0.25);
+}
+.border-mars-subtle {
+  border-color: rgb(var(--rgb-mars) / 0.28);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 28px -6px rgb(var(--rgb-cyan) / 0.25);
+}
+.glow-cyan-strong:hover {
+  box-shadow: 0 0 32px -4px rgb(var(--rgb-cyan) / 0.42);
+}
+.glow-mars:hover {
+  box-shadow: 0 0 36px -6px rgb(var(--rgb-mars) / 0.32);
+}
+
+/* Accent switch: add .accent-cyan or .accent-mars to any element,
+   then use the helpers below inside it. */
+.accent-cyan {
+  --accent: var(--rgb-cyan);
+}
+.accent-mars {
+  --accent: var(--rgb-mars);
+}
+
+.text-accent {
+  color: rgb(var(--accent));
+}
+.bg-accent {
+  background-color: rgb(var(--accent));
+}
+.border-accent-subtle {
+  border-color: rgb(var(--accent) / 0.28);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(var(--rgb-main));
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--rgb-card));
+  border: 1px solid rgb(var(--rgb-border) / 0.16);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--rgb-muted) / 0.35);
+}
+
+/* ---- مشتركة بين الـ navbar والـ lang/age menus والـ theme toggle ----
+   كانت جوه navbar.css (component-scoped) فمكانتش بتتطبق على الـ child components. */
+[data-popover-toggle] .chevron {
+  transition: transform 0.2s ease;
+}
+
+[data-popover-toggle][aria-expanded='true'] .chevron {
+  transform: rotate(180deg);
+}
+
+.menu-option {
+  width: 100%;
+  text-align: start;
+  padding: 0.4rem 0.875rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: rgb(var(--rgb-muted));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-option:hover {
+  color: rgb(var(--rgb-text));
+  background: rgb(var(--rgb-card) / 0.6);
+}
+
+.menu-option.is-selected {
+  color: rgb(var(--rgb-cyan));
+  background: rgb(var(--rgb-card) / 0.9);
+}
+
+.menu-option .dot {
+  visibility: hidden;
+}
+.menu-option.is-selected .dot {
+  visibility: visible;
+}
+
+.age-option {
+  width: 100%;
+  text-align: start;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+}
+
+.age-option:hover {
+  background: rgb(var(--rgb-card));
+}
+
+.age-option.is-selected {
+  background: rgb(var(--rgb-card));
+  border-color: rgb(var(--rgb-cyan) / 0.25);
+}
+
+.age-option.is-selected .age-name {
+  color: rgb(var(--rgb-cyan));
+}
+
+.theme-toggle .icon-to-light,
+.theme-toggle .icon-to-dark {
+  display: none;
+}
+
+body.dark-theme .theme-toggle .icon-to-light {
+  display: block;
+}
+body.white-theme .theme-toggle .icon-to-dark {
+  display: block;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background: rgb(var(--rgb-card));
+  border: 1px solid rgb(var(--rgb-border) / 0.25);
+  color: rgb(var(--rgb-cyan));
+}
+.theme-toggle:hover {
+  border-color: rgb(var(--rgb-cyan) / 0.6);
+}
+.theme-toggle svg {
+  width: 1.1rem;
+  height: 1.1rem;
+}

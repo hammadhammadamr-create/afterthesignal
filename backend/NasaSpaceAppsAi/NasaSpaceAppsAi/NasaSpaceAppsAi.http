@@ -1,0 +1,152 @@
+@NasaSpaceAppsAi_HostAddress = http://localhost:5239
+
+# (Keep your existing weatherforecast request up here)
+
+### 1. Get all users
+GET {{NasaSpaceAppsAi_HostAddress}}/api/Users
+Accept: application/json
+
+### 2. Get a specific user by ID (e.g., ID 1)
+GET {{NasaSpaceAppsAi_HostAddress}}/api/Users/1
+Accept: application/json
+
+### 3. Create a new user
+POST {{NasaSpaceAppsAi_HostAddress}}/api/Users
+Content-Type: application/json
+
+{
+  "name": "Test User",
+  "age": 25
+}
+
+### 4. Update an existing user (Ensure the ID in URL matches ID in JSON)
+PUT {{NasaSpaceAppsAi_HostAddress}}/api/Users/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Test User Updated",
+  "age": 26
+}
+
+### 5. Delete a user
+DELETE {{NasaSpaceAppsAi_HostAddress}}/api/Users/2
+
+
+##################################################################################
+### Get all Space Equipment (Gadgets)
+GET {{NasaSpaceAppsAi_HostAddress}}/api/SpaceEquipment
+Accept: application/json
+### Get ONLY Moon Gadgets
+GET {{NasaSpaceAppsAi_HostAddress}}/api/SpaceEquipment/location/Moon
+Accept: application/json
+
+### Get ONLY Mars Gadgets
+GET {{NasaSpaceAppsAi_HostAddress}}/api/SpaceEquipment/location/Mars
+Accept: application/json
+
+### 0. Clear old incomplete equipment data (Run this once first!)
+DELETE {{NasaSpaceAppsAi_HostAddress}}/api/SpaceEquipment/clear
+
+### 1. Add Apollo Lunar Modules (Moon)
+POST {{NasaSpaceAppsAi_HostAddress}}/api/SpaceEquipment
+Content-Type: application/json
+
+{
+  "name": "Apollo Lunar Modules (Descent Stages)",
+  "location": "Moon",
+  "status": "Inactive Monument",
+  "adultBriefDescription": "Six Apollo Lunar Module descent stages remain on the lunar surface where they landed between 1969 and 1972.",
+  "adultFullDetails": "Designed purely for landing in the lunar vacuum, the octagonal descent stage housed the landing gear, radar antenna, scientific equipment bays (ALSEP), and the gimbaled descent propulsion engine. When astronauts completed their surface EVA, the descent stage served as a launchpad for the upper ascent stage. Today, the descent stages of Apollo 11, 12, 14, 15, 16, and 17 rest intact across the lunar mares and highlands.",
+  "realisticImageUrl": "assets/images/apollo-lm-realistic.jpg",
+  "kidBriefDescription": "The bottom half of the spaceship that carried the first astronauts down to the Moon!",
+  "kidExtendedDetails": "Think of the Lunar Module as a two-part LEGO ship! The bottom part had big spider-like legs and a rocket engine to help astronauts land safely. When it was time to fly back to Earth, the top cabin blasted off right from the roof of the bottom part, leaving the golden base behind in the moondust forever.",
+  "cartoonImageUrl": "assets/images/apollo-lm-cartoon.png"
+}
+
+### 2. Add Lunar Roving Vehicles (Moon)
+POST {{NasaSpaceAppsAi_HostAddress}}/api/SpaceEquipment
+Content-Type: application/json
+
+{
+  "name": "Lunar Roving Vehicles (LRVs)",
+  "location": "Moon",
+  "status": "Permanently Parked",
+  "adultBriefDescription": "Three battery-powered, four-wheeled rovers used during Apollo 15, 16, and 17 to expand lunar exploration range.",
+  "adultFullDetails": "Folded tightly into the Lunar Module's Quadrant 1 bay during transit, the Boeing-built LRV weighed 210 kg on Earth (just 34 kg in lunar gravity) and could carry over twice its own weight. Powered by two 36-volt silver-zinc non-rechargeable batteries and woven piano-wire mesh tires, each wheel had its own electric traction motor. They remain parked at Hadley-Apennine, Descartes Highlands, and Taurus-Littrow.",
+  "realisticImageUrl": "assets/images/lrv-realistic.jpg",
+  "kidBriefDescription": "Electric 'Moon Buggies' that astronauts drove across craters and mountains on the Moon!",
+  "kidExtendedDetails": "Walking in a bulky spacesuit is tiring, so NASA folded up an electric car like a lawn chair and strapped it to the side of the spaceship! Astronauts unfolded it on the Moon and drove around collecting heavy moon rocks. Because there are no gas stations in space, it ran on giant batteries and had bouncy wire wheels instead of air tires.",
+  "cartoonImageUrl": "assets/images/lrv-cartoon.png"
+}
+
+### 3. Add Surveyor 3 Lander (Moon)
+POST {{NasaSpaceAppsAi_HostAddress}}/api/SpaceEquipment
+Content-Type: application/json
+
+{
+  "name": "Surveyor 3 Robotic Lander",
+  "location": "Moon",
+  "status": "Decommissioned",
+  "adultBriefDescription": "Uncrewed lunar lander from 1967 that became the only spacecraft on another world visited by humans during Apollo 12.",
+  "adultFullDetails": "Surveyor 3 landed in Oceanus Procellarum in April 1967 to test soft-landing technology and analyze lunar soil mechanics using a robotic trenching scoop. Over 30 months later, Apollo 12 landed just 180 meters away. Astronauts Pete Conrad and Alan Bean walked over to inspect it, removing its TV camera and soil scoop to return to Earth so engineers could study long-term exposure to the lunar environment.",
+  "realisticImageUrl": "assets/images/surveyor3-realistic.jpg",
+  "kidBriefDescription": "A three-legged robot scout that landed on the Moon two years before astronauts arrived!",
+  "kidExtendedDetails": "Before humans could land on the Moon, NASA sent robot scouts like Surveyor 3 to make sure the ground wasn't quicksand! It had a little robot shovel to dig in the dirt and a camera to take over 6,000 pictures. Later, Apollo 12 astronauts landed right next to it, walked over to say hello, and brought its camera back to Earth!",
+  "cartoonImageUrl": "assets/images/surveyor3-cartoon.png"
+}
+
+### 4. Add Sojourner Rover (Mars)
+POST {{NasaSpaceAppsAi_HostAddress}}/api/SpaceEquipment
+Content-Type: application/json
+
+{
+  "name": "Sojourner Rover",
+  "location": "Mars",
+  "status": "Lost Contact (1997)",
+  "adultBriefDescription": "The first wheeled vehicle to rove another planet, deployed by the Mars Pathfinder lander in Ares Vallis in 1997.",
+  "adultFullDetails": "Measuring just 65 cm long and weighing 11.5 kg, Sojourner was a six-wheeled technology demonstrator featuring a rocker-bogie suspension system and a top speed of 1 cm per second. Designed for a 7-sol mission, it operated for 83 sols, traveling roughly 100 meters and analyzing rocks with its Alpha Proton X-Ray Spectrometer before its base station lander lost battery functionality due to extreme Martian cold.",
+  "realisticImageUrl": "assets/images/sojourner-realistic.jpg",
+  "kidBriefDescription": "The very first robot car to ever drive on Mars, only about the size of a microwave oven!",
+  "kidExtendedDetails": "Back in 1997, Sojourner bounced onto Mars inside a giant bundle of airbags! Once the airbags deflated, this tiny six-wheeled rover rolled down a ramp onto the red dirt. It was only supposed to work for one week, but it kept exploring and sniffing Martian rocks for almost three months!",
+  "cartoonImageUrl": "assets/images/sojourner-cartoon.png"
+}
+
+### 5. Add Spirit & Opportunity Rovers (Mars)
+POST {{NasaSpaceAppsAi_HostAddress}}/api/SpaceEquipment
+Content-Type: application/json
+
+{
+  "name": "Spirit & Opportunity (MER)",
+  "location": "Mars",
+  "status": "Inactive",
+  "adultBriefDescription": "Twin Mars Exploration Rovers that landed in 2004 and revolutionized our understanding of ancient liquid water on Mars.",
+  "adultFullDetails": "Planned for 90-sol missions, both solar-powered rovers vastly exceeded expectations. Spirit operated for over 6 years in Gusev Crater until becoming trapped in soft sulfate sand at 'Troy' in 2009 and freezing during winter. Opportunity operated for nearly 15 years, driving a record 45.16 km across Meridiani Planum to Endeavour Crater before a planet-encircling dust storm in June 2018 blocked sunlight from its solar arrays.",
+  "realisticImageUrl": "assets/images/mer-realistic.jpg",
+  "kidBriefDescription": "Twin golf-cart-sized robot geologists that discovered Mars used to be warm and wet!",
+  "kidExtendedDetails": "Spirit and Opportunity were twin robot siblings sent to opposite sides of Mars! They were only supposed to last for 90 days, but Martian winds kept blowing the dust off their solar panels, giving them extra power. Opportunity drove a full marathon across Mars for almost 15 years before a giant dust storm finally put it to sleep.",
+  "cartoonImageUrl": "assets/images/mer-cartoon.png"
+}
+
+### 6. Add Ingenuity Mars Helicopter (Mars)
+POST {{NasaSpaceAppsAi_HostAddress}}/api/SpaceEquipment
+Content-Type: application/json
+
+{
+  "name": "Ingenuity Mars Helicopter (Ginny)",
+  "location": "Mars",
+  "status": "Stationary Artifact (2024)",
+  "adultBriefDescription": "The first aircraft to achieve powered, controlled aerodynamic flight on another planet, operating in Jezero Crater.",
+  "adultFullDetails": "Deployed from the belly of the Perseverance rover in April 2021, the 1.8 kg coaxial rotorcraft had to spin its carbon-fiber blades at roughly 2,537 RPM to generate lift in Mars's 1%-Earth-density atmosphere. Intended for just 5 test flights over 30 days, Ingenuity completed 72 flights and flew 17.0 km over nearly three years before sustaining rotor blade damage during a landing in sandy terrain in January 2024.",
+  "realisticImageUrl": "assets/images/ingenuity-realistic.jpg",
+  "kidBriefDescription": "A super-lightweight mini-helicopter that became the first aircraft to fly in the skies of another planet!",
+  "kidExtendedDetails": "The air on Mars is super thin, so flying a helicopter there is really hard! Ingenuity had ultra-fast spinning blades and weighed less than a gallon of milk. It rode to Mars tucked under the belly of the Perseverance rover and flew 72 times, acting as a flying scout before retiring in the Martian sand dunes.",
+  "cartoonImageUrl": "assets/images/ingenuity-cartoon.png"
+}
+### Test the NASA AI Endpoint
+POST {{NasaSpaceAppsAi_HostAddress}}/api/Ai/ask
+Content-Type: application/json
+
+{
+  "question": "Tell me about the Sojourner Rover"
+}

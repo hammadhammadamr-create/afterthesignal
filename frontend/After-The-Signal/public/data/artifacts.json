@@ -1,0 +1,359 @@
+{
+  "artifacts": [
+    {
+      "id": "apollo-lm",
+      "world": "moon",
+      "featured": true,
+      "name": "Apollo Lunar Module",
+      "timeline": [
+        {
+          "id": "apollo-11-launch",
+          "date": "July 16, 1969",
+          "title": "Apollo 11 Launch",
+          "description": "Apollo 11 launches from Kennedy Space Center, beginning the mission that will carry the first humans to the lunar surface.",
+          "type": "launch"
+        },
+        {
+          "id": "apollo-11-landing",
+          "date": "July 20, 1969",
+          "title": "First Lunar Landing",
+          "description": "Apollo 11's Eagle lunar module lands in the Sea of Tranquility.",
+          "type": "landing"
+        },
+        {
+          "id": "apollo-12-landing",
+          "date": "November 19, 1969",
+          "title": "Apollo 12 Landing",
+          "description": "The Apollo 12 lunar module lands in the Ocean of Storms.",
+          "type": "landing"
+        },
+        {
+          "id": "apollo-14-landing",
+          "date": "February 5, 1971",
+          "title": "Apollo 14 Landing",
+          "description": "Apollo 14 lands in the Fra Mauro region.",
+          "type": "landing"
+        },
+        {
+          "id": "apollo-15-landing",
+          "date": "July 30, 1971",
+          "title": "Apollo 15 Landing",
+          "description": "Apollo 15 lands near Hadley Rille, beginning the first mission to use the Lunar Roving Vehicle.",
+          "type": "landing"
+        },
+        {
+          "id": "apollo-16-landing",
+          "date": "April 20, 1972",
+          "title": "Apollo 16 Landing",
+          "description": "Apollo 16 lands in the Descartes region of the Moon.",
+          "type": "landing"
+        },
+        {
+          "id": "apollo-17-landing",
+          "date": "December 11, 1972",
+          "title": "Final Apollo Lunar Landing",
+          "description": "Apollo 17 makes the final crewed lunar landing of the Apollo program.",
+          "type": "landing"
+        }
+      ],
+      "title": "Apollo Lunar Module",
+      "place": "Sea of Tranquility & Lunar Plains",
+      "kicker": "APOLLO 11–17 DESCENT STAGES",
+      "period": "1969–1972",
+      "summary": "The spacecraft descent stages that carried humanity's first explorers to the lunar surface and remain as permanent monuments across six landing sites on the Moon.",
+      "code": "LUNAR ARTIFACT 01 // APOLLO 11–17",
+      "coords": "00.6741° N, 23.4730° E (Tranquility Base)",
+      "years": "1969 — 1972 (6 Landings)",
+      "signal": "Ascent Stage Separated",
+      "img": "https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?auto=format&fit=crop&w=900&q=80",
+      "subtitle": "The octagonal gold-and-aluminized-Kapton descent stages served as both landing craft and launchpad for twelve Apollo astronauts across six historic lunar expeditions.",
+      "discoveries": "Enabled the collection of 382 kilograms of lunar rocks and core samples, proving that the Moon formed from a giant impact with early Earth over 4.5 billion years ago.",
+      "ending": "When each crew fired their ascent engine to return to lunar orbit, the heavy descent stage was intentionally left behind on the lunar regolith as a permanent launch platform.",
+      "legacy": "Each descent stage bears a stainless-steel commemorative plaque and remains preserved in the airless lunar vacuum — photographed from orbit by the Lunar Reconnaissance Orbiter.",
+      "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-059C"
+    },
+    {
+      "id": "opportunity",
+      "world": "mars",
+      "featured": true,
+      "name": "Opportunity Rover",
+      "timeline": [
+        {
+          "id": "opportunity-launch",
+          "date": "July 7, 2003",
+          "title": "Journey to Mars",
+          "description": "Opportunity launches from Cape Canaveral aboard a Delta II rocket.",
+          "type": "launch"
+        },
+        {
+          "id": "opportunity-landing",
+          "date": "January 24, 2004",
+          "title": "Landing on Mars",
+          "description": "Opportunity lands in Meridiani Planum and begins its planned 90-sol surface mission.",
+          "type": "landing"
+        },
+        {
+          "id": "opportunity-marathon",
+          "date": "August 2015",
+          "title": "Beyond the Marathon",
+          "description": "Opportunity becomes the first human-made vehicle to travel a marathon distance on another world.",
+          "type": "milestone"
+        },
+        {
+          "id": "opportunity-last-contact",
+          "date": "June 10, 2018",
+          "title": "Last Communication",
+          "description": "The rover sends its final communication as a planet-wide dust storm blocks sunlight from reaching its solar panels.",
+          "type": "communication"
+        },
+        {
+          "id": "opportunity-end",
+          "date": "February 13, 2019",
+          "title": "Mission Concluded",
+          "description": "NASA officially declares the Opportunity mission complete after attempts to restore communication.",
+          "type": "end"
+        }
+      ],
+      "title": "Opportunity Rover",
+      "place": "Perseverance Valley, Meridiani",
+      "kicker": "MER-B // PERSEVERANCE VALLEY",
+      "period": "2004–2018",
+      "summary": "Designed for a 90-sol mission, Opportunity traversed 45 kilometers of Martian plains for nearly 15 years before a planet-encircling dust storm ended its signal.",
+      "code": "MARS ARTIFACT 04 // MER-B",
+      "coords": "02.28° S, 354.52° E (Perseverance Valley)",
+      "years": "Jan 2004 — June 10, 2018",
+      "signal": "Global Dust Storm (Sol 5111)",
+      "img": "https://images.unsplash.com/photo-1614728263952-84ea256f9679?auto=format&fit=crop&w=900&q=80",
+      "subtitle": "Engineered for a 90-Martian-day warranty, the golf-cart-sized solar rover operated for 5,111 sols (nearly 15 Earth years) and completed the first extraterrestrial marathon.",
+      "discoveries": "Discovered spherical hematite \"blueberries\" and gypsum veins inside Endeavour Crater, providing conclusive geological proof that ancient Mars once hosted warm, neutral liquid water.",
+      "ending": "In June 2018, the most intense planet-encircling Martian dust storm in decades blotted out the Sun over Perseverance Valley, draining Opportunity’s solar batteries.",
+      "legacy": "Transformed Mars exploration from \"Follow the Water\" to \"Seek Signs of Ancient Life,\" directly paving the path for Curiosity and Perseverance.",
+      "source": "https://science.nasa.gov/mission/mars-exploration-rovers-spirit-and-opportunity/"
+    },
+    {
+      "id": "ingenuity",
+      "world": "mars",
+      "featured": true,
+      "name": "Ingenuity Helicopter",
+      "timeline": [
+        {
+          "id": "ingenuity-arrival",
+          "date": "February 18, 2021",
+          "title": "Arrival on Mars",
+          "description": "Ingenuity arrives at Jezero Crater attached beneath the Perseverance rover.",
+          "type": "landing"
+        },
+        {
+          "id": "ingenuity-deployment",
+          "date": "April 3, 2021",
+          "title": "Helicopter Deployment",
+          "description": "Ingenuity is placed on the Martian surface in preparation for its flight demonstration.",
+          "type": "deployment"
+        },
+        {
+          "id": "ingenuity-first-flight",
+          "date": "April 19, 2021",
+          "title": "First Powered Flight",
+          "description": "Ingenuity completes the first powered, controlled flight on another planet.",
+          "type": "milestone"
+        },
+        {
+          "id": "ingenuity-final-flight",
+          "date": "January 18, 2024",
+          "title": "Flight 72",
+          "description": "Ingenuity completes its 72nd and final flight after sustaining rotor blade damage during landing.",
+          "type": "end"
+        },
+        {
+          "id": "ingenuity-mission-end",
+          "date": "January 25, 2024",
+          "title": "Mission Ends",
+          "description": "NASA announces the end of the Ingenuity mission after the helicopter can no longer fly.",
+          "type": "end"
+        }
+      ],
+      "title": "Ingenuity Helicopter",
+      "place": "Valinor Hills, Jezero Crater",
+      "kicker": "MARS ROTORCRAFT // JEZERO CRATER",
+      "period": "2021–2024",
+      "summary": "The first aircraft to achieve powered, controlled flight on another planet, completing 72 historic flights before a rotor blade strike grounded it forever in Valinor Hills.",
+      "code": "MARS ARTIFACT 05 // ROTORCRAFT",
+      "coords": "18.50° N, 77.41° E (Valinor Hills)",
+      "years": "April 2021 — Jan 18, 2024",
+      "signal": "Rotor Blade Strike (Flight 72)",
+      "img": "https://images.unsplash.com/photo-1581822261290-991b38693d1b?auto=format&fit=crop&w=900&q=80",
+      "subtitle": "Weighing just 1.8 kilograms on Earth, Ingenuity proved that powered, controlled aerodynamic flight is possible in Mars’s atmosphere — which is less than 1% as dense as Earth’s.",
+      "discoveries": "Planned for 5 technology-demonstration flights over 30 days, Ingenuity evolved into an aerial scout for the Perseverance rover, completing 72 flights and flying 17 kilometers.",
+      "ending": "During a steep landing on featureless sand ripples on Flight 72 (January 18, 2024), its carbon-fiber rotor blades struck the dune surface, ending its flying career.",
+      "legacy": "Even grounded, Ingenuity continues to collect surface weather telemetry in Jezero Crater and has inspired a new generation of multi-rotor aerial explorers for Mars and Titan.",
+      "source": "https://science.nasa.gov/mission/mars-2020-perseverance/ingenuity-mars-helicopter/"
+    },
+    {
+      "id": "alsep",
+      "world": "moon",
+      "featured": false,
+      "name": "ALSEP Scientific Packages",
+      "timeline": [
+        {
+          "id": "alsep-apollo-12",
+          "date": "November 19, 1969",
+          "title": "First ALSEP Deployment",
+          "description": "Apollo 12 astronauts deploy the first ALSEP scientific station on the lunar surface.",
+          "type": "deployment"
+        },
+        {
+          "id": "alsep-apollo-14",
+          "date": "February 5, 1971",
+          "title": "Apollo 14 Station",
+          "description": "A second ALSEP station is deployed at the Fra Mauro landing site.",
+          "type": "deployment"
+        },
+        {
+          "id": "alsep-apollo-15",
+          "date": "July 31, 1971",
+          "title": "Apollo 15 Station",
+          "description": "A third ALSEP station is deployed near the Hadley-Apennine region.",
+          "type": "deployment"
+        },
+        {
+          "id": "alsep-apollo-16",
+          "date": "April 21, 1972",
+          "title": "Apollo 16 Station",
+          "description": "Apollo 16 astronauts deploy another scientific station in the Descartes region.",
+          "type": "deployment"
+        },
+        {
+          "id": "alsep-apollo-17",
+          "date": "December 12, 1972",
+          "title": "Final ALSEP Deployment",
+          "description": "Apollo 17 deploys the fifth and final ALSEP station at the Taurus-Littrow site.",
+          "type": "deployment"
+        },
+        {
+          "id": "alsep-termination",
+          "date": "September 30, 1977",
+          "title": "End of Operations",
+          "description": "NASA terminates operations of the remaining ALSEP stations after years of scientific data collection.",
+          "type": "end"
+        }
+      ],
+      "title": "ALSEP Scientific Packages",
+      "place": "Apollo 12–17 Surface Stations",
+      "kicker": "APOLLO LUNAR SURFACE EXPERIMENTS",
+      "period": "1969–1977",
+      "summary": "Nuclear-powered geophysical stations deployed by Apollo astronauts that recorded moonquakes, solar wind, and internal lunar heat for eight years after humanity left.",
+      "code": "LUNAR ARTIFACT 02 // APOLLO 12–17",
+      "coords": "Multiple Lunar Landing Sites",
+      "years": "1969 — Sept 30, 1977",
+      "signal": "Commanded Standby (1977)",
+      "img": "https://images.unsplash.com/photo-1454789548928-9efd52dc4031?auto=format&fit=crop&w=900&q=80",
+      "subtitle": "Autonomous, radioisotope-powered scientific observatories deployed by hand on the Moon to monitor the lunar environment long after astronauts departed.",
+      "discoveries": "Detected over 12,000 seismic events (moonquakes and meteoroid impacts), measured the Moon’s tenuous exosphere, and mapped the thickness of the lunar crust and mantle.",
+      "ending": "After operating faithfully for up to eight years, ground controllers transmitted the final termination command on September 30, 1977 due to budget reallocations.",
+      "legacy": "Passive laser retroreflectors placed alongside the packages still reflect laser pulses fired from Earth observatories today, measuring the Moon’s 3.8 cm annual drift.",
+      "source": "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1969-099C"
+    },
+    {
+      "id": "surveyor-3",
+      "world": "moon",
+      "featured": false,
+      "name": "Surveyor 3",
+      "timeline": [
+        {
+          "id": "surveyor-launch",
+          "date": "April 17, 1967",
+          "title": "Launch",
+          "description": "Surveyor 3 launches from Cape Kennedy aboard an Atlas-Centaur rocket.",
+          "type": "launch"
+        },
+        {
+          "id": "surveyor-landing",
+          "date": "April 20, 1967",
+          "title": "Soft Landing",
+          "description": "Surveyor 3 successfully lands in Oceanus Procellarum and begins transmitting images and surface data.",
+          "type": "landing"
+        },
+        {
+          "id": "surveyor-last-contact",
+          "date": "May 4, 1967",
+          "title": "Last Communication",
+          "description": "NASA receives the final communication from Surveyor 3 after its lunar surface operations.",
+          "type": "communication"
+        },
+        {
+          "id": "surveyor-apollo-12",
+          "date": "November 20, 1969",
+          "title": "Visited by Apollo 12",
+          "description": "Astronauts Pete Conrad and Alan Bean inspect Surveyor 3 and retrieve selected components for examination on Earth.",
+          "type": "milestone"
+        }
+      ],
+      "title": "Surveyor 3 Lander",
+      "place": "Oceanus Procellarum",
+      "kicker": "OCEANUS PROCELLARUM // CRATER LANDER",
+      "period": "1967–1969",
+      "summary": "The robotic scout that proved the lunar soil could support Apollo — and the only spacecraft ever visited on another world by human astronauts two years later.",
+      "code": "LUNAR ARTIFACT 03 // OCEANUS PROCELLARUM",
+      "coords": "03.0155° S, 23.4180° W",
+      "years": "April 1967 — May 1967",
+      "signal": "Lunar Night Freeze (May 1967)",
+      "img": "https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?auto=format&fit=crop&w=900&q=80",
+      "subtitle": "A robotic triple-legged lunar lander equipped with a mechanical soil scoop and television camera that transmitted 6,315 images from inside a gentle lunar crater.",
+      "discoveries": "Confirmed that the lunar regolith was firm enough to bear the weight of a crewed Apollo Lunar Module rather than swallowing spacecraft in deep dust.",
+      "ending": "Fell silent after experiencing the extreme -150°C cold of its first two-week lunar night in May 1967.",
+      "legacy": "In November 1969, Apollo 12 astronauts Pete Conrad and Alan Bean landed just 180 meters away and walked over to inspect Surveyor 3 — the only time humans have visited a probe on another world.",
+      "source": "https://science.nasa.gov/mission/surveyor-3/"
+    },
+    {
+      "id": "insight",
+      "world": "mars",
+      "featured": false,
+      "name": "InSight Lander",
+      "title": "InSight Lander",
+      "timeline": [
+        {
+          "id": "insight-launch",
+          "date": "May 5, 2018",
+          "title": "Launch to Mars",
+          "description": "InSight launches from Vandenberg Air Force Base on its journey to study the interior of Mars.",
+          "type": "launch"
+        },
+        {
+          "id": "insight-landing",
+          "date": "November 26, 2018",
+          "title": "Landing on Mars",
+          "description": "InSight successfully lands in Elysium Planitia and begins preparing its scientific instruments.",
+          "type": "landing"
+        },
+        {
+          "id": "insight-first-marsquake",
+          "date": "April 2019",
+          "title": "First Marsquake Detected",
+          "description": "Scientists detect the first seismic event identified as a marsquake using InSight's seismometer.",
+          "type": "discovery"
+        },
+        {
+          "id": "insight-mission-end",
+          "date": "December 15, 2022",
+          "title": "Mission Ends",
+          "description": "NASA ends the InSight mission after dust accumulation prevents the lander from generating enough power to maintain communications.",
+          "type": "end"
+        }
+      ],
+      "place": "Elysium Planitia",
+      "kicker": "ELYSIUM PLANITIA // SEISMIC PROBE",
+      "period": "2018–2022",
+      "summary": "A stationary planetary geofinder that listened to the heartbeat of Mars, detecting over 1,300 marsquakes and mapping the planet's liquid core before dust silenced its solar panels.",
+      "code": "MARS ARTIFACT 06 // GEOPHYSICAL STATION",
+      "coords": "04.5024° N, 135.6234° E (Elysium Planitia)",
+      "years": "Nov 2018 — Dec 15, 2022",
+      "signal": "Solar Array Dust Accumulation",
+      "img": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=900&q=80",
+      "subtitle": "The first mission dedicated to peering deep beneath the Martian surface, deploying an ultra-sensitive dome-shielded seismometer directly onto the plains of Elysium Planitia.",
+      "discoveries": "Recorded 1,319 marsquakes — including a magnitude 4.7 tremor — allowing scientists to measure the depth of the Martian crust, mantle, and 1,830-km-radius liquid metal core.",
+      "ending": "Four years of fine red Martian dust coated its twin circular solar arrays until it could no longer recharge its batteries, sending a poignant final selfie in December 2022.",
+      "legacy": "Provided the first complete 3D interior map of another terrestrial planet beyond the Earth-Moon system.",
+      "source": "https://science.nasa.gov/mission/insight/"
+    }
+  ]
+}

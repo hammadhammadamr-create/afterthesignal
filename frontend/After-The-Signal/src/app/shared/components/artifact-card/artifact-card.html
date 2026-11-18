@@ -1,0 +1,65 @@
+@if (data(); as a) {
+  <article
+    class="artifact-card rounded-xl overflow-hidden flex flex-col justify-between cursor-pointer group"
+    [class.accent-cyan]="accent() === 'cyan'"
+    [class.accent-mars]="accent() === 'mars'"
+    tabindex="0"
+    role="button"
+    [attr.aria-label]="a.name"
+    (click)="open()"
+    (keydown.enter)="open($event)"
+    (keydown.space)="open($event)"
+  >
+    <div>
+      <div class="relative aspect-[16/10] w-full overflow-hidden bg-space-main">
+        <img
+          [src]="a.img"
+          [alt]="a.name"
+          loading="lazy"
+          [appFallback]="a.name"
+          [fallbackAccent]="accent()"
+          class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-space-card via-transparent to-space-main/40"
+        ></div>
+        <div class="absolute top-4 left-4">
+          <span
+            class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-space-main/[.85] border border-accent-subtle font-mono text-[11px] tracking-[0.16em] uppercase text-accent backdrop-blur-sm"
+          >
+            <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
+            <span>{{ 'world.' + a.world | t }}</span>
+          </span>
+        </div>
+        <div class="absolute top-4 right-4">
+          <span
+            class="font-mono text-[11px] px-2.5 py-1 rounded bg-space-main/80 text-space-textMuted border border-subtle"
+            >{{ a.period }}</span
+          >
+        </div>
+      </div>
+      <div class="p-7">
+        <p class="font-mono text-[11px] tracking-[0.18em] text-accent uppercase">{{ a.kicker }}</p>
+        <h3
+          class="card-title mt-2 font-display font-bold uppercase text-2xl tracking-[0.06em] text-space-textMain transition-colors"
+        >
+          {{ a.name }}
+        </h3>
+        <p class="mt-3 text-sm text-space-textMuted leading-relaxed">{{ a.summary }}</p>
+      </div>
+    </div>
+    <div class="px-7 pb-7 pt-4 border-t border-subtle flex items-center justify-between">
+      <span
+        class="card-cta font-display font-bold text-xs tracking-[0.2em] uppercase text-accent"
+        >{{ 'card.discover' | t }}</span
+      >
+      <span
+        class="card-arrow w-8 h-8 rounded-lg bg-space-main/60 border border-accent-subtle flex items-center justify-center text-accent transition-all"
+      >
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </span>
+    </div>
+  </article>
+}

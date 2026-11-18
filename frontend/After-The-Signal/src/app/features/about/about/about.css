@@ -1,0 +1,16 @@
+@keyframes pulseWave {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scaleY(0.88);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleY(1.08);
+  }
+}
+
+.wave-bar {
+  animation: pulseWave 3.2s ease-in-out infinite;
+  transform-origin: center;
+}

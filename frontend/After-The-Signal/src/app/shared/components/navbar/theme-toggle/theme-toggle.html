@@ -1,0 +1,19 @@
+<button
+  type="button"
+  class="theme-toggle"
+  [class.is-dark]="isDark()"
+  [attr.data-size]="size"
+  [attr.title]="'theme.toggle' | t"
+  [attr.aria-label]="'theme.toggle' | t"
+  [attr.aria-pressed]="isDark()"
+  (click)="theme.toggle()"
+>
+  <span class="cloud cloud-one" aria-hidden="true">☁️</span>
+  <span class="cloud cloud-two" aria-hidden="true">☁️</span>
+  <span class="stars" aria-hidden="true">✦ ✧ ✦ ✧</span>
+
+  <span class="toggle-circle" aria-hidden="true">
+    <span class="sun-icon">☀️</span>
+    <span class="moon-icon">🌙</span>
+  </span>
+</button>

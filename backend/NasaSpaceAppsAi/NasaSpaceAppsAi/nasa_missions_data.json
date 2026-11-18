@@ -1,0 +1,425 @@
+{
+  "dataset_name": "NASA_Abandoned_Spacecraft_Archive",
+  "description": "Dataset containing human-made spacecraft, rovers, landers, instruments, and artificial objects remaining on the Moon, Mars, asteroids, and deep space.",
+  "source": "NASA Mission Archives",
+  "categories": [
+    "Moon",
+    "Mars",
+    "Asteroids",
+    "Deep Space",
+    "Space Telescope"
+  ],
+
+  "objects": [
+
+    {
+      "id": "moon_apollo_lunar_modules",
+      "name": "Apollo Lunar Modules Descent Stages",
+      "type": "Lunar Landing Hardware",
+      "agency": "NASA",
+      "destination": "Moon",
+      "first_use_year": 1969,
+      "mission": [
+        "Apollo 11",
+        "Apollo 12",
+        "Apollo 14",
+        "Apollo 15",
+        "Apollo 16",
+        "Apollo 17"
+      ],
+      "description": "The descent stages of Apollo Lunar Modules remained on the Moon after astronauts launched from the lunar surface using the ascent stage.",
+      "scientific_purpose": [
+        "Human lunar landing operations",
+        "Landing technology demonstration",
+        "Historical artifact preservation"
+      ],
+      "current_location": "Various Apollo landing sites on the lunar surface",
+      "status": "Inactive - Permanent lunar artifact",
+      "importance": "Represents the first human exploration hardware placed on another world",
+      "keywords": [
+        "Apollo",
+        "Moon",
+        "Lunar Module",
+        "NASA",
+        "Human Spaceflight"
+      ]
+    },
+
+    {
+      "id": "moon_lunar_roving_vehicle",
+      "name": "Lunar Roving Vehicles (LRV)",
+      "type": "Electric Lunar Rover",
+      "agency": "NASA",
+      "destination": "Moon",
+      "first_use_year": 1971,
+      "missions": [
+        "Apollo 15",
+        "Apollo 16",
+        "Apollo 17"
+      ],
+      "description": "Battery-powered vehicles used by astronauts to travel longer distances across the lunar surface.",
+      "technology": {
+        "power": "Battery electric system",
+        "purpose": [
+          "Transportation",
+          "Sample collection",
+          "Lunar geology exploration"
+        ]
+      },
+      "current_location": "Parked at Apollo landing sites",
+      "status": "Inactive",
+      "importance": "First human-operated vehicles on another world",
+      "keywords": [
+        "Moon Buggy",
+        "Apollo",
+        "Rover"
+      ]
+    },
+
+    {
+      "id": "apollo_alsep",
+      "name": "Apollo Lunar Surface Experiments Packages (ALSEP)",
+      "type": "Scientific Instrument Package",
+      "agency": "NASA",
+      "destination": "Moon",
+      "launch_period": "1969-1972",
+      "description": "Scientific stations deployed by Apollo astronauts to study the lunar environment.",
+      "instruments": [
+        "Seismometers",
+        "Heat flow experiments",
+        "Magnetometers",
+        "Laser retroreflectors"
+      ],
+      "scientific_goals": [
+        "Study lunar earthquakes",
+        "Measure lunar interior properties",
+        "Study Moon physics"
+      ],
+      "current_location": "Apollo lunar landing sites",
+      "status": "Inactive",
+      "importance": "Provided long-term scientific measurements from the Moon",
+      "keywords": [
+        "ALSEP",
+        "Apollo Science",
+        "Moon Research"
+      ]
+    },
+
+    {
+      "id": "surveyor_landers",
+      "name": "Surveyor Lunar Landers",
+      "type": "Robotic Lunar Lander",
+      "agency": "NASA",
+      "destination": "Moon",
+      "years": "1966-1968",
+      "description": "Robotic spacecraft designed to demonstrate soft landing technology and analyze lunar soil before Apollo missions.",
+      "missions": [
+        "Surveyor 1",
+        "Surveyor 3",
+        "Surveyor 5",
+        "Surveyor 6",
+        "Surveyor 7"
+      ],
+      "scientific_instruments": [
+        "Cameras",
+        "Soil analysis tools",
+        "Robotic arm"
+      ],
+      "current_location": "Lunar surface",
+      "status": "Inactive",
+      "importance": "Prepared NASA for human Moon landings",
+      "keywords": [
+        "Surveyor",
+        "Moon",
+        "Soft Landing"
+      ]
+    },
+
+    {
+      "id": "mars_sojourner_rover",
+      "name": "Sojourner Rover",
+      "type": "Mars Rover",
+      "agency": "NASA",
+      "destination": "Mars",
+      "launch_year": 1996,
+      "landing_year": 1997,
+      "mission": "Mars Pathfinder",
+      "description": "The first successful rover to operate on Mars. It explored the Ares Vallis region and demonstrated rover mobility technology.",
+      "instruments": [
+        "Alpha Proton X-ray Spectrometer",
+        "Camera System",
+        "Mobility Sensors"
+      ],
+      "achievements": [
+        "First wheeled vehicle on another planet",
+        "Tested autonomous rover operations",
+        "Analyzed Martian rocks"
+      ],
+      "current_location": "Ares Vallis, Mars",
+      "status": "Inactive - Permanent Mars artifact",
+      "keywords": [
+        "Sojourner",
+        "Pathfinder",
+        "Mars Rover"
+      ]
+    },
+
+    {
+      "id": "mars_spirit_rover",
+      "name": "Spirit Rover",
+      "type": "Mars Exploration Rover",
+      "agency": "NASA",
+      "destination": "Mars",
+      "launch_year": 2003,
+      "landing_year": 2004,
+      "mission": "Mars Exploration Rover Mission",
+      "description": "Twin rover designed to study Martian geology and search for evidence of past water activity.",
+      "scientific_goals": [
+        "Study rocks and minerals",
+        "Investigate ancient environments",
+        "Search for water evidence"
+      ],
+      "landing_site": "Gusev Crater",
+      "current_location": "Mars surface",
+      "status": "Inactive",
+      "keywords": [
+        "Spirit",
+        "MER-A",
+        "Mars"
+      ]
+    },
+
+    {
+      "id": "mars_opportunity_rover",
+      "name": "Opportunity Rover",
+      "type": "Mars Exploration Rover",
+      "agency": "NASA",
+      "destination": "Mars",
+      "launch_year": 2003,
+      "landing_year": 2004,
+      "description": "A rover that discovered strong evidence that liquid water existed on ancient Mars.",
+      "landing_site": "Meridiani Planum",
+      "achievements": [
+        "Long-distance Mars exploration",
+        "Studied sedimentary rocks",
+        "Found evidence of ancient water"
+      ],
+      "status": "Inactive",
+      "keywords": [
+        "Opportunity",
+        "MER-B",
+        "Mars Exploration"
+      ]
+    },
+    {
+      "id": "viking_1_lander",
+      "name": "Viking 1 Lander",
+      "type": "Mars Lander",
+      "agency": "NASA",
+      "destination": "Mars",
+      "launch_year": 1975,
+      "landing_year": 1976,
+      "description": "The first U.S. spacecraft to successfully land on Mars and return surface images.",
+      "experiments": [
+        "Biology experiments",
+        "Atmospheric measurements",
+        "Soil analysis"
+      ],
+      "landing_site": "Chryse Planitia",
+      "status": "Inactive - Mars artifact",
+      "importance": "First successful American Mars landing",
+      "keywords": [
+        "Viking",
+        "Mars",
+        "NASA"
+      ]
+    },
+
+    {
+      "id": "viking_2_lander",
+      "name": "Viking 2 Lander",
+      "type": "Mars Lander",
+      "agency": "NASA",
+      "destination": "Mars",
+      "launch_year": 1975,
+      "landing_year": 1976,
+      "description": "Second Viking spacecraft that studied the Martian surface and atmosphere.",
+      "landing_site": "Utopia Planitia",
+      "status": "Inactive",
+      "keywords": [
+        "Viking 2",
+        "Mars"
+      ]
+    },
+
+    {
+      "id": "phoenix_lander",
+      "name": "Phoenix Lander",
+      "type": "Mars Stationary Lander",
+      "agency": "NASA",
+      "destination": "Mars",
+      "launch_year": 2007,
+      "landing_year": 2008,
+      "description": "A robotic lander designed to study water ice and soil chemistry near the Martian north polar region.",
+      "instruments": [
+        "Robotic Arm",
+        "Microscopes",
+        "Thermal Analysis Tools"
+      ],
+      "discoveries": [
+        "Confirmed water ice beneath Martian soil"
+      ],
+      "status": "Inactive",
+      "keywords": [
+        "Phoenix",
+        "Mars Ice"
+      ]
+    },
+
+    {
+      "id": "insight_lander",
+      "name": "InSight Lander",
+      "type": "Mars Geophysical Lander",
+      "agency": "NASA",
+      "destination": "Mars",
+      "launch_year": 2018,
+      "description": "Mission designed to study the deep interior structure of Mars.",
+      "instruments": [
+        "Seismometer",
+        "Heat Flow Probe"
+      ],
+      "scientific_goal": [
+        "Study Mars interior",
+        "Detect marsquakes"
+      ],
+      "status": "Inactive",
+      "keywords": [
+        "InSight",
+        "Marsquake",
+        "Geology"
+      ]
+    },
+
+    {
+      "id": "dawn_spacecraft",
+      "name": "Dawn Spacecraft",
+      "type": "Asteroid and Dwarf Planet Orbiter",
+      "agency": "NASA",
+      "targets": [
+        "Vesta",
+        "Ceres"
+      ],
+      "launch_year": 2007,
+      "description": "Spacecraft that studied two major bodies in the asteroid belt using ion propulsion.",
+      "technology": [
+        "Ion propulsion",
+        "Visible cameras",
+        "Spectrometers"
+      ],
+      "current_location": "Orbit around Ceres",
+      "status": "Inactive - Permanent orbit",
+      "keywords": [
+        "Dawn",
+        "Ceres",
+        "Vesta"
+      ]
+    },
+
+    {
+      "id": "near_shoemaker",
+      "name": "NEAR Shoemaker",
+      "type": "Asteroid Orbiter and Lander",
+      "agency": "NASA",
+      "target": "433 Eros",
+      "launch_year": 1996,
+      "description": "The first spacecraft to orbit an asteroid and later land on its surface.",
+      "achievements": [
+        "First asteroid orbit mission",
+        "First asteroid landing"
+      ],
+      "status": "Inactive - Resting on asteroid surface",
+      "keywords": [
+        "NEAR",
+        "Eros",
+        "Asteroid"
+      ]
+    },
+
+    {
+      "id": "pioneer_10",
+      "name": "Pioneer 10",
+      "type": "Deep Space Probe",
+      "agency": "NASA",
+      "launch_year": 1972,
+      "targets": [
+        "Jupiter",
+        "Outer Solar System"
+      ],
+      "description": "First spacecraft to pass through the asteroid belt and visit Jupiter.",
+      "status": "Inactive - Traveling through deep space",
+      "keywords": [
+        "Pioneer",
+        "Jupiter"
+      ]
+    },
+
+    {
+      "id": "pioneer_11",
+      "name": "Pioneer 11",
+      "type": "Deep Space Probe",
+      "agency": "NASA",
+      "launch_year": 1973,
+      "targets": [
+        "Jupiter",
+        "Saturn"
+      ],
+      "description": "Spacecraft that performed the first flyby of Saturn.",
+      "status": "Inactive - Deep space object",
+      "keywords": [
+        "Pioneer 11",
+        "Saturn"
+      ]
+    },
+
+    {
+      "id": "ingenuity_helicopter",
+      "name": "Ingenuity Mars Helicopter",
+      "type": "Mars Aircraft",
+      "agency": "NASA",
+      "launch_year": 2020,
+      "mission": "Mars 2020 Perseverance",
+      "description": "The first powered aircraft to achieve controlled flight on another planet.",
+      "achievements": [
+        "First flight on Mars",
+        "Demonstrated aerial exploration technology"
+      ],
+      "status": "Inactive - Stationary Mars artifact",
+      "keywords": [
+        "Ingenuity",
+        "Mars Helicopter"
+      ]
+    },
+
+    {
+      "id": "kepler_space_telescope",
+      "name": "Kepler Space Telescope",
+      "type": "Space Telescope",
+      "agency": "NASA",
+      "launch_year": 2009,
+      "mission": "Exoplanet Discovery",
+      "description": "Space telescope designed to discover planets orbiting other stars.",
+      "achievements": [
+        "Discovered thousands of exoplanet candidates",
+        "Changed understanding of planetary systems"
+      ],
+      "current_location": "Earth-trailing heliocentric orbit",
+      "status": "Inactive",
+      "keywords": [
+        "Kepler",
+        "Exoplanets",
+        "NASA Telescope"
+      ]
+    }
+
+  ]
+}

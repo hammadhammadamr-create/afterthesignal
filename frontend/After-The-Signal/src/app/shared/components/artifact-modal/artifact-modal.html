@@ -1,0 +1,131 @@
+@if (modal.artifact(); as a) {
+  <div
+    id="artifact-modal"
+    class="fixed inset-0 z-[60] flex items-center justify-center p-4 sm:p-6 md:p-10 bg-space-main/[.85] backdrop-blur-lg"
+    [ngClass]="'accent-' + accentOf(a.world)"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-title"
+    (click)="onBackdrop($event)"
+  >
+    <div
+      class="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-2xl bg-space-secondary border border-cyan-subtle shadow-2xl"
+    >
+      <div
+        class="sticky top-0 z-20 flex items-center justify-between px-6 py-4 bg-space-main/95 border-b border-subtle backdrop-blur-md"
+      >
+        <div class="flex items-center gap-2.5">
+          <span class="w-2.5 h-2.5 rounded-full bg-accent"></span>
+          <span class="font-mono text-xs tracking-[0.2em] uppercase text-accent">{{ a.code }}</span>
+        </div>
+        <button
+          #closeBtn
+          type="button"
+          aria-label="Close"
+          (click)="close()"
+          class="w-9 h-9 rounded-lg bg-space-card border border-subtle hover:border-space-cyan text-space-textMuted hover:text-space-textMain flex items-center justify-center transition-colors"
+        >
+          <svg
+            class="w-5 h-5"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="p-6 sm:p-8 md:p-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <div class="lg:col-span-5">
+            <div class="rounded-xl overflow-hidden border border-subtle bg-space-main aspect-[4/3]">
+              <img
+                [src]="a.img"
+                [alt]="a.title"
+                [appFallback]="a.title"
+                [fallbackAccent]="accentOf(a.world)"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div
+              class="mt-4 p-4 rounded-xl bg-space-card border border-subtle space-y-2.5 font-mono text-xs"
+            >
+              <div class="flex justify-between gap-4">
+                <span class="text-space-textMuted">{{ 'modal.destination' | t }}</span>
+                <span class="text-space-textMain font-semibold text-right">{{
+                  'world.' + a.world | t
+                }}</span>
+              </div>
+              <div class="flex justify-between gap-4">
+                <span class="text-space-textMuted">{{ 'modal.coords' | t }}</span>
+                <span class="text-space-cyan text-right" data-modal="coords">{{ a.coords }}</span>
+              </div>
+              <div class="flex justify-between gap-4">
+                <span class="text-space-textMuted">{{ 'modal.span' | t }}</span>
+                <span class="text-space-textMain text-right" data-modal="years">{{ a.years }}</span>
+              </div>
+              <div class="flex justify-between gap-4">
+                <span class="text-space-textMuted">{{ 'modal.signal' | t }}</span>
+                <span class="text-space-mars text-right">{{ a.signal }}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 space-y-6">
+            <div>
+              <h3
+                id="modal-title"
+                class="font-display font-bold uppercase text-2xl sm:text-3xl tracking-[0.06em] text-space-textMain"
+              >
+                {{ a.title }}
+              </h3>
+              <p class="mt-2 text-sm sm:text-base text-space-textMuted leading-relaxed">
+                {{ a.subtitle }}
+              </p>
+            </div>
+
+            <div class="p-5 rounded-xl bg-space-card border border-subtle">
+              <h4 class="font-mono text-xs tracking-[0.18em] uppercase text-space-cyan mb-2">
+                {{ 'discoveries.title' | t }}
+              </h4>
+              <p class="text-sm text-space-textMuted leading-relaxed">{{ a.discoveries }}</p>
+            </div>
+
+            <div class="p-5 rounded-xl bg-space-card border border-subtle">
+              <h4 class="font-mono text-xs tracking-[0.18em] uppercase text-space-mars mb-2">
+                {{ 'modal.ending' | t }}
+              </h4>
+              <p class="text-sm text-space-textMuted leading-relaxed">{{ a.ending }}</p>
+            </div>
+
+            <div class="p-5 rounded-xl bg-space-card border border-subtle">
+              <h4 class="font-mono text-xs tracking-[0.18em] uppercase text-space-textMain mb-2">
+                {{ 'modal.legacy' | t }}
+              </h4>
+              <p class="text-sm text-space-textMuted leading-relaxed">{{ a.legacy }}</p>
+            </div>
+            <button
+              type="button"
+              (click)="openFullStory()"
+              class="inline-flex items-center justify-center gap-3 px-6 py-3 rounded-lg bg-accent text-space-main font-mono text-xs tracking-[0.16em] uppercase font-bold hover:opacity-90 transition-opacity"
+            >
+              {{ 'modal.readFullStory' | t }}
+              <span aria-hidden="true">↗</span>
+            </button>
+            @if (a.source) {
+              <a
+                [href]="a.source"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex font-mono text-xs tracking-[0.16em] uppercase text-accent hover:underline"
+                >{{ 'modal.source' | t }}</a
+              >
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+}

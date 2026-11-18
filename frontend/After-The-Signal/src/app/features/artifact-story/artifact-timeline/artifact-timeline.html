@@ -1,0 +1,67 @@
+<section class="rounded-2xl border border-subtle bg-space-card p-6 md:p-8">
+  <!-- Header -->
+  <div>
+    <p class="font-mono text-xs tracking-[0.2em] uppercase text-accent">
+      {{ 'story.timelineEyebrow' | t }}
+    </p>
+
+    <h2 class="mt-3 font-display font-bold text-2xl uppercase text-space-textMain">
+      {{ 'story.timelineTitle' | t }}
+    </h2>
+  </div>
+
+  <!-- Events -->
+  <div class="relative mt-8">
+    <!-- Timeline Line -->
+    <div
+      class="absolute start-[7px] top-2 bottom-3 w-px overflow-hidden rounded-full bg-accent/20"
+      aria-hidden="true"
+    >
+      <div
+        class="timeline-progress-fill absolute start-0 top-0 h-0 w-full rounded-full bg-[var(--active-event-color,var(--color-accent))] transition-[height] duration-500 ease-out"
+      ></div>
+    </div>
+
+    <div class="space-y-8">
+      @for (event of events(); track event.id; let i = $index) {
+        <article
+          [attr.data-event-type]="event.type"
+          class="timeline-event relative ps-10 rounded-xl py-3 pe-3 -my-3 transition-colors duration-300 hover:bg-space-secondary/50 cursor-pointer"
+          [style.transition-delay.ms]="i * 90"
+          [style.--event-color]="colorOf(event.type)"
+          (click)="selectEvent($event)"
+          (keydown)="onEventKeydown($event)"
+          tabindex="0"
+          role="button"
+        >
+          <div
+            class="timeline-marker absolute start-0 top-1 flex size-4 items-center justify-center rounded-full border-2 border-accent bg-space-card text-[8px] text-accent"
+            aria-hidden="true"
+          >
+            {{ iconOf(event.type) }}
+          </div>
+
+          <div>
+            <time class="timeline-date font-mono text-xs tracking-widest text-accent">
+              {{ event.date }}
+            </time>
+
+            <h3
+              class="timeline-title mt-2 font-display font-bold text-base md:text-lg text-space-textMain"
+            >
+              {{ event.title }}
+            </h3>
+
+            <p class="mt-2 text-sm leading-7 text-space-textMuted">
+              {{ event.description }}
+            </p>
+          </div>
+        </article>
+      } @empty {
+        <p class="text-sm text-space-textMuted">
+          {{ 'story.timelineEmpty' | t }}
+        </p>
+      }
+    </div>
+  </div>
+</section>

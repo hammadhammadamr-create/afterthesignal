@@ -1,0 +1,42 @@
+<main class="relative pt-40 pb-24 md:pb-32 min-h-screen">
+  <div class="max-w-container mx-auto px-6 md:px-12 lg:px-16">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
+      <div>
+        <div class="inline-flex items-center gap-2 mb-3">
+          <span class="w-2 h-2 rounded-full bg-space-cyan"></span>
+          <span class="font-mono text-xs tracking-[0.22em] uppercase text-space-cyan">{{
+            'cards.eyebrow' | t
+          }}</span>
+        </div>
+        <h1
+          class="font-display font-bold uppercase text-3xl sm:text-4xl lg:text-5xl tracking-[0.08em] text-space-textMain"
+        >
+          {{ 'cards.title' | t }}
+        </h1>
+        <p class="mt-3 text-base sm:text-lg text-space-textMuted">{{ 'cards.subtitle' | t }}</p>
+      </div>
+
+      <div
+        class="inline-flex items-center p-1 rounded-lg bg-space-secondary border border-subtle self-start md:self-auto"
+      >
+        @for (f of filters; track f.mode) {
+          <button
+            type="button"
+            class="filter-btn"
+            [attr.data-filter]="f.mode"
+            [class.is-active]="mode() === f.mode"
+            [attr.aria-pressed]="mode() === f.mode"
+            (click)="mode.set(f.mode)"
+          >
+            <span>{{ f.key | t }}</span>
+            @if (f.showCount) {
+              <span>({{ count(f.mode) }})</span>
+            }
+          </button>
+        }
+      </div>
+    </div>
+
+    <app-artifact-grid [artifacts]="visible()"></app-artifact-grid>
+  </div>
+</main>

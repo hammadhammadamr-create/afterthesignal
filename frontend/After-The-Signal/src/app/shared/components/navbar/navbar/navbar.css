@@ -1,0 +1,136 @@
+.nav-link {
+  position: relative;
+  padding: 0.5rem 0;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgb(var(--rgb-muted));
+  transition: color var(--transition-fast);
+}
+
+.nav-link:hover,
+.nav-link.is-active {
+  color: rgb(var(--rgb-cyan));
+}
+
+.nav-link.is-active {
+  color: rgb(var(--rgb-text));
+}
+
+.nav-link.is-active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: rgb(var(--rgb-cyan));
+}
+
+[data-popover-toggle] .chevron {
+  transition: transform 0.2s ease;
+}
+
+[data-popover-toggle][aria-expanded='true'] .chevron {
+  transform: rotate(180deg);
+}
+
+.menu-option {
+  width: 100%;
+  text-align: start;
+  padding: 0.4rem 0.875rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: rgb(var(--rgb-muted));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-option:hover {
+  color: rgb(var(--rgb-text));
+  background: rgb(var(--rgb-card) / 0.6);
+}
+
+.menu-option.is-selected {
+  color: rgb(var(--rgb-cyan));
+  background: rgb(var(--rgb-card) / 0.9);
+}
+
+.menu-option .dot {
+  visibility: hidden;
+}
+.menu-option.is-selected .dot {
+  visibility: visible;
+}
+
+.age-option {
+  width: 100%;
+  text-align: start;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+}
+
+.age-option:hover {
+  background: rgb(var(--rgb-card));
+}
+
+.age-option.is-selected {
+  background: rgb(var(--rgb-card));
+  border-color: rgb(var(--rgb-cyan) / 0.25);
+}
+
+.age-option.is-selected .age-name {
+  color: rgb(var(--rgb-cyan));
+}
+
+.menu-item {
+  width: 100%;
+  text-align: start;
+  padding: 0.5rem 0.625rem;
+  border-radius: 0.5rem;
+  transition: background-color var(--transition-fast);
+}
+
+.menu-item:hover {
+  background: rgb(var(--rgb-card));
+}
+.menu-item:hover .menu-item-name {
+  color: rgb(var(--accent));
+}
+
+.theme-toggle .icon-to-light,
+.theme-toggle .icon-to-dark {
+  display: none;
+}
+
+body.dark-theme .theme-toggle .icon-to-light {
+  display: block;
+}
+body.white-theme .theme-toggle .icon-to-dark {
+  display: block;
+}
+
+/* زرار الثيم: شكله الأساسي هنا في CSS عادي عشان يظهر حتى لو Tailwind لسه مش اتحمّل */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background: rgb(var(--rgb-card));
+  border: 1px solid rgb(var(--rgb-border) / 0.25);
+  color: rgb(var(--rgb-cyan));
+}
+.theme-toggle:hover {
+  border-color: rgb(var(--rgb-cyan) / 0.6);
+}
+.theme-toggle svg {
+  width: 1.1rem;
+  height: 1.1rem;
+}

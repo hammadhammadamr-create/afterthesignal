@@ -1,0 +1,51 @@
+<div class="relative">
+  <button
+    type="button"
+    title="Age & Reading Depth Mode"
+    data-popover-toggle
+    [attr.aria-expanded]="popover.open() === 'age'"
+    (click)="toggle($event)"
+    class="h-9 px-3.5 rounded-lg bg-space-card/90 border border-subtle hover:border-space-cyan/50 flex items-center gap-2 text-xs font-mono tracking-wider text-space-textMain transition-colors"
+  >
+    <svg
+      class="w-4 h-4 text-space-cyan"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.8"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+      />
+    </svg>
+    <span class="text-space-textMuted">{{ 'nav.mode' | t }}</span>
+    <span class="text-space-cyan font-medium">{{ age.labelKey() | t }}</span>
+  </button>
+  @if (popover.open() === 'age') {
+    <div
+      data-popover="age"
+      class="absolute right-0 mt-2 w-64 bg-space-secondary border border-cyan-subtle rounded-xl shadow-2xl p-3.5 z-50"
+    >
+      <p class="font-mono text-[10px] tracking-[0.16em] uppercase text-space-textMuted mb-2.5">
+        {{ 'age.title' | t }}
+      </p>
+      <div class="space-y-1.5">
+        @for (mode of modes; track mode) {
+          <button
+            type="button"
+            class="age-option"
+            [class.is-selected]="age.mode() === mode"
+            (click)="age.set(mode)"
+          >
+            <p class="age-name text-xs font-medium text-space-textMain">
+              {{ 'age.' + mode + '.name' | t }}
+            </p>
+            <p class="text-[11px] text-space-textMuted">{{ 'age.' + mode + '.desc' | t }}</p>
+          </button>
+        }
+      </div>
+    </div>
+  }
+</div>

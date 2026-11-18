@@ -1,0 +1,88 @@
+.bg-starfield {
+  background-image:
+    radial-gradient(1px 1px at 15% 25%, rgb(var(--rgb-text) / 0.35) 50%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 45% 65%, rgb(var(--rgb-cyan) / 0.28) 50%, transparent 100%),
+    radial-gradient(1px 1px at 78% 18%, rgb(var(--rgb-text) / 0.25) 50%, transparent 100%),
+    radial-gradient(1px 1px at 88% 80%, rgb(var(--rgb-text) / 0.2) 50%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 28% 85%, rgb(var(--rgb-muted) / 0.22) 50%, transparent 100%);
+}
+
+.hero-vignette {
+  background-image: radial-gradient(
+    circle at center,
+    rgb(var(--rgb-cyan) / 0.08) 0%,
+    rgb(var(--rgb-main) / 0.88) 72%
+  );
+}
+
+@keyframes scrollLine {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+.animate-scroll-line {
+  animation: scrollLine 2.4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.world-glow-cyan {
+  background-image: radial-gradient(
+    circle at top right,
+    rgb(var(--rgb-cyan) / 0.16),
+    transparent 60%
+  );
+}
+
+.world-glow-mars {
+  background-image: radial-gradient(
+    circle at top right,
+    rgb(var(--rgb-mars) / 0.18),
+    transparent 60%
+  );
+}
+
+.card-lunar:hover {
+  border-color: rgb(var(--rgb-cyan) / 0.55);
+  box-shadow: 0 18px 48px -12px rgb(var(--rgb-cyan) / 0.18);
+}
+
+.card-martian:hover {
+  border-color: rgb(var(--rgb-mars) / 0.55);
+  box-shadow: 0 18px 48px -12px rgb(var(--rgb-mars) / 0.18);
+}
+
+.filter-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  border: 1px solid transparent;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgb(var(--rgb-muted));
+  transition: all var(--transition-fast);
+}
+
+.filter-btn:hover {
+  color: rgb(var(--rgb-text));
+}
+.filter-btn[data-filter='moon']:hover {
+  color: rgb(var(--rgb-cyan));
+}
+.filter-btn[data-filter='mars']:hover {
+  color: rgb(var(--rgb-mars));
+}
+
+.filter-btn.is-active {
+  background: rgb(var(--rgb-card));
+  color: rgb(var(--rgb-cyan));
+  border-color: rgb(var(--rgb-cyan) / 0.25);
+}

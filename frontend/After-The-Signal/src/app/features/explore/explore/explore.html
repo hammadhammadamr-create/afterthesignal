@@ -1,0 +1,58 @@
+<section
+  class="relative overflow-hidden border-b border-subtle"
+  [class.accent-cyan]="world() === 'moon'"
+  [class.accent-mars]="world() === 'mars'"
+>
+  <div class="max-w-7xl mx-auto px-6 py-20 md:py-28">
+    <div class="max-w-3xl">
+      <p class="font-mono text-xs tracking-[0.2em] uppercase text-accent">
+        {{ 'explore.eyebrow' | t }}
+      </p>
+
+      <div class="mt-6 flex items-center gap-3">
+        <span class="w-2 h-2 rounded-full bg-accent"></span>
+        <span class="font-mono text-xs tracking-widest uppercase text-space-textMuted">
+          {{ 'world.' + world() | t }}
+        </span>
+      </div>
+
+      <h1
+        class="mt-5 font-display font-bold text-4xl sm:text-5xl md:text-7xl uppercase tracking-tight text-space-textMain"
+      >
+        {{ titleKey() | t }}
+      </h1>
+
+      <p class="mt-6 max-w-2xl text-base md:text-lg leading-relaxed text-space-textMuted">
+        {{ descriptionKey() | t }}
+      </p>
+
+      <div class="mt-10 flex items-center gap-3">
+        <span class="font-display font-bold text-4xl text-accent">
+          {{ artifacts().length.toString().padStart(2, '0') }}
+        </span>
+
+        <span class="font-mono text-xs tracking-[0.16em] uppercase text-space-textMuted">
+          {{ 'explore.artifactsCount' | t }}
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="max-w-7xl mx-auto px-6 py-16 md:py-24">
+  <div class="mb-10">
+    <p class="font-mono text-xs tracking-[0.2em] uppercase text-accent">
+      {{ 'explore.archiveEyebrow' | t }}
+    </p>
+
+    <h2 class="mt-3 font-display font-bold text-2xl md:text-3xl uppercase text-space-textMain">
+      {{ 'explore.archiveTitle' | t }}
+    </h2>
+
+    <p class="mt-3 text-sm md:text-base text-space-textMuted">
+      {{ 'explore.archiveSubtitle' | t }}
+    </p>
+  </div>
+
+  <app-artifact-grid [artifacts]="artifacts()" />
+</section>

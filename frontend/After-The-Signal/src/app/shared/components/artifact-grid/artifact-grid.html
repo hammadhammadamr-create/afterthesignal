@@ -1,0 +1,9 @@
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  @if (service.error()) {
+    <p class="col-span-full text-center text-space-textMuted">{{ 'cards.error' | t }}</p>
+  } @else {
+    @for (a of artifacts; track a.id) {
+      <app-artifact-card [artifact]="a"></app-artifact-card>
+    }
+  }
+</div>

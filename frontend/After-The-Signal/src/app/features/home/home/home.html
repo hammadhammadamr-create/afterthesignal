@@ -1,0 +1,552 @@
+<main>
+  <section
+    class="relative min-h-screen w-full flex items-center justify-center overflow-hidden pt-20"
+    id="hero"
+  >
+    <div class="absolute inset-0 z-0 bg-space-main">
+      <img
+        alt="Lunar horizon and planetary exploration view from space"
+        class="w-full h-full object-cover object-center opacity-[.55] scale-105 transition-transform duration-1000"
+        appFallback="LUNAR AND MARS EXPLORATION ARCHIVE"
+        fallbackAccent="cyan"
+        src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=2000&amp;q=85"
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-space-main/90 via-space-main/[.65] to-space-main"
+      ></div>
+      <div class="absolute inset-0 hero-vignette"></div>
+      <div class="absolute inset-0 bg-starfield opacity-70"></div>
+    </div>
+    <div
+      class="hidden xl:flex absolute left-12 top-1/2 -translate-y-1/2 flex-col items-start gap-2 z-10 pointer-events-none opacity-60"
+    >
+      <span class="font-mono text-[10px] tracking-[0.2em] text-space-cyan">{{
+        'hero.sys' | t
+      }}</span>
+      <div class="w-12 h-[1px] bg-space-cyan/40"></div>
+      <span class="font-mono text-[10px] tracking-[0.15em] text-space-textMuted">{{
+        'hero.luna' | t
+      }}</span>
+      <span class="font-mono text-[10px] tracking-[0.15em] text-space-textMuted">{{
+        'hero.marsCoords' | t
+      }}</span>
+    </div>
+    <div
+      class="hidden xl:flex absolute right-12 top-1/2 -translate-y-1/2 flex-col items-end gap-2 z-10 pointer-events-none opacity-60"
+    >
+      <span class="font-mono text-[10px] tracking-[0.2em] text-space-cyan">{{
+        'hero.status' | t
+      }}</span>
+      <div class="w-12 h-[1px] bg-space-cyan/40"></div>
+      <span class="font-mono text-[10px] tracking-[0.15em] text-space-textMuted">{{
+        'hero.hardware' | t
+      }}</span>
+      <span class="font-mono text-[10px] tracking-[0.15em] text-space-textMuted">{{
+        'hero.destinations' | t
+      }}</span>
+    </div>
+    <div
+      class="relative z-10 max-w-container mx-auto px-6 md:px-12 text-center flex flex-col items-center py-20"
+    >
+      <div
+        class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-space-card/[.85] border border-cyan-subtle mb-8 backdrop-blur-sm"
+      >
+        <span class="w-2 h-2 rounded-full bg-space-cyan animate-ping"></span>
+        <span class="font-mono text-[11px] tracking-[0.22em] uppercase text-space-cyan">{{
+          'hero.eyebrow' | t
+        }}</span>
+      </div>
+      <h1
+        class="font-display font-bold uppercase tracking-[0.12em] text-3xl sm:text-5xl md:text-6xl lg:text-[64px] leading-[1.12] text-space-textMain max-w-4xl"
+      >
+        <span class="block">{{ 'hero.line1' | t }}</span>
+        <span class="block text-space-textMain/95 mb-4 sm:mb-6">{{ 'hero.line2' | t }}</span>
+        <span class="block text-space-cyan drop-shadow-[0_0_24px_rgba(53,213,232,0.25)]">{{
+          'hero.line3' | t
+        }}</span>
+        <span class="block">{{ 'hero.line4' | t }}</span>
+      </h1>
+      <p
+        class="mt-7 max-w-2xl text-base sm:text-lg md:text-xl text-space-textMuted font-normal leading-relaxed"
+      >
+        {{ 'hero.subtitle' | t }}
+      </p>
+      <div class="mt-10 flex flex-col sm:flex-row items-center gap-4">
+        <a
+          class="group relative inline-flex items-center gap-3.5 px-8 py-4 rounded-lg bg-space-cyan text-space-onAccent font-display font-bold text-sm tracking-[0.18em] uppercase glow-cyan glow-cyan-strong hover:bg-space-cyan/[.85] transition-all duration-300"
+          routerLink="/"
+          fragment="choose-world"
+        >
+          <span>{{ 'hero.ctaPrimary' | t }}</span>
+          <svg
+            class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.3"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M14 5l7 7m0 0l-7 7m7-7H3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        </a>
+        <a
+          class="inline-flex items-center gap-2.5 px-7 py-4 rounded-lg bg-space-card/75 hover:bg-space-card text-space-textMain border border-subtle hover:border-space-cyan/40 font-display font-semibold text-sm tracking-[0.16em] uppercase transition-all duration-300"
+          routerLink="/"
+          fragment="stories"
+        >
+          <span>{{ 'hero.ctaSecondary' | t }}</span>
+        </a>
+      </div>
+    </div>
+    <a
+      aria-label="Scroll to What Was Left Behind"
+      class="absolute bottom-7 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2.5 group"
+      routerLink="/about"
+      fragment="what-was-left"
+    >
+      <span
+        class="font-mono text-[10px] tracking-[0.26em] uppercase text-space-textMuted group-hover:text-space-cyan transition-colors"
+        >{{ 'hero.scroll' | t }}</span
+      >
+      <div class="w-[1px] h-11 bg-space-textMuted/20 overflow-hidden relative">
+        <div class="w-full h-1/2 bg-space-cyan animate-scroll-line"></div>
+      </div>
+    </a>
+  </section>
+
+  <section
+    class="relative py-24 md:py-32 bg-space-secondary border-t border-subtle"
+    id="choose-world"
+  >
+    <div class="max-w-container mx-auto px-6 md:px-12 lg:px-16">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 mb-3">
+          <span class="w-2 h-2 rounded-full bg-space-cyan"></span>
+          <span class="font-mono text-xs tracking-[0.22em] uppercase text-space-cyan">{{
+            'worlds.eyebrow' | t
+          }}</span>
+        </div>
+        <h2
+          class="font-display font-bold uppercase text-3xl sm:text-4xl lg:text-5xl tracking-[0.09em] text-space-textMain"
+        >
+          {{ 'worlds.title' | t }}
+        </h2>
+        <p class="mt-4 text-base sm:text-lg text-space-textMuted">{{ 'worlds.subtitle' | t }}</p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
+        <article
+          class="group relative rounded-xl overflow-hidden bg-space-card border border-cyan-subtle card-lunar transition-all duration-500 min-h-[520px] flex flex-col justify-between p-8 sm:p-10"
+        >
+          <div class="absolute inset-0 z-0 bg-space-main">
+            <img
+              alt="Realistic lunar surface photography of craters and regolith"
+              class="w-full h-full object-cover object-center opacity-[.65] group-hover:scale-105 transition-transform duration-700"
+              appFallback="THE MOON"
+              fallbackAccent="cyan"
+              src="https://images.unsplash.com/photo-1522030299830-16b8d3d049fe?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-space-main via-space-main/70 to-space-main/30"
+            ></div>
+            <div class="absolute inset-0 world-glow-cyan"></div>
+          </div>
+          <div class="relative z-10 flex items-center justify-between">
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-space-main/80 border border-cyan-subtle font-mono text-xs tracking-[0.18em] text-space-cyan uppercase backdrop-blur-sm"
+            >
+              <span class="w-1.5 h-1.5 rounded-full bg-space-cyan"></span
+              ><span>{{ 'world.moon.badge' | t }}</span></span
+            >
+            <span
+              class="font-mono text-xs text-space-textMuted bg-space-main/70 px-2.5 py-1 rounded border border-subtle"
+              >{{ 'world.count' | t }}</span
+            >
+          </div>
+          <div class="relative z-10 mt-auto pt-28">
+            <p class="font-mono text-xs tracking-[0.2em] uppercase text-space-cyan mb-2">
+              {{ 'world.moon.kicker' | t }}
+            </p>
+            <h3
+              class="font-display font-bold uppercase text-4xl sm:text-5xl tracking-[0.1em] text-space-textMain"
+            >
+              {{ 'world.moon' | t }}
+            </h3>
+            <p class="mt-4 text-base sm:text-lg text-space-textMuted max-w-lg leading-relaxed">
+              {{ 'world.moon.desc' | t }}
+            </p>
+            <div class="mt-6 flex flex-wrap gap-2">
+              @for (a of artifacts.moon(); track a.id) {
+                <button
+                  type="button"
+                  (click)="modal.open(a.id)"
+                  class="text-xs font-mono px-2.5 py-1 rounded bg-space-card/90 border border-subtle text-space-textMain hover:border-space-cyan/50 transition-colors"
+                >
+                  {{ a.name }}
+                </button>
+              }
+            </div>
+            <div class="mt-8 pt-6 border-t border-subtle flex items-center justify-between">
+              <button
+                class="inline-flex items-center gap-3 px-6 py-3.5 rounded-lg bg-space-cyan/[.15] hover:bg-space-cyan text-space-cyan hover:text-space-onAccent border border-space-cyan/50 font-display font-bold text-xs sm:text-sm tracking-[0.18em] uppercase transition-all duration-300"
+                type="button"
+                (click)="filter.jumpToWorld('moon')"
+              >
+                <span>{{ 'world.moon.cta' | t }}</span>
+                <svg
+                  class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </button>
+              <span class="font-mono text-[11px] text-space-cyan/80 hidden sm:inline">{{
+                'world.moon.tag' | t
+              }}</span>
+            </div>
+          </div>
+        </article>
+        <article
+          class="group relative rounded-xl overflow-hidden bg-space-card border border-mars-subtle card-martian transition-all duration-500 min-h-[520px] flex flex-col justify-between p-8 sm:p-10"
+        >
+          <div class="absolute inset-0 z-0 bg-space-main">
+            <img
+              alt="Realistic Mars landscape photography showing red planet plains and horizon"
+              class="w-full h-full object-cover object-center opacity-[.65] group-hover:scale-105 transition-transform duration-700"
+              appFallback="MARS RED PLANET"
+              fallbackAccent="mars"
+              src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-space-main via-space-main/[.72] to-space-main/30"
+            ></div>
+            <div class="absolute inset-0 world-glow-mars"></div>
+          </div>
+          <div class="relative z-10 flex items-center justify-between">
+            <span
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-space-main/80 border border-mars-subtle font-mono text-xs tracking-[0.18em] text-space-mars uppercase backdrop-blur-sm"
+            >
+              <span class="w-1.5 h-1.5 rounded-full bg-space-mars"></span
+              ><span>{{ 'world.mars.badge' | t }}</span></span
+            >
+            <span
+              class="font-mono text-xs text-space-textMuted bg-space-main/70 px-2.5 py-1 rounded border border-subtle"
+              >{{ 'world.count' | t }}</span
+            >
+          </div>
+          <div class="relative z-10 mt-auto pt-28">
+            <p class="font-mono text-xs tracking-[0.2em] uppercase text-space-mars mb-2">
+              {{ 'world.mars.kicker' | t }}
+            </p>
+            <h3
+              class="font-display font-bold uppercase text-4xl sm:text-5xl tracking-[0.1em] text-space-textMain"
+            >
+              {{ 'world.mars' | t }}
+            </h3>
+            <p class="mt-4 text-base sm:text-lg text-space-textMuted max-w-lg leading-relaxed">
+              {{ 'world.mars.desc' | t }}
+            </p>
+            <div class="mt-6 flex flex-wrap gap-2">
+              @for (a of artifacts.mars(); track a.id) {
+                <button
+                  type="button"
+                  (click)="modal.open(a.id)"
+                  class="text-xs font-mono px-2.5 py-1 rounded bg-space-card/90 border border-subtle text-space-textMain hover:border-space-mars/50 transition-colors"
+                >
+                  {{ a.name }}
+                </button>
+              }
+            </div>
+            <div class="mt-8 pt-6 border-t border-subtle flex items-center justify-between">
+              <button
+                class="inline-flex items-center gap-3 px-6 py-3.5 rounded-lg bg-space-mars/[.15] hover:bg-space-mars text-space-mars hover:text-space-onAccent border border-space-mars/50 font-display font-bold text-xs sm:text-sm tracking-[0.18em] uppercase transition-all duration-300"
+                type="button"
+                (click)="filter.jumpToWorld('mars')"
+              >
+                <span>{{ 'world.mars.cta' | t }}</span>
+                <svg
+                  class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </button>
+              <span class="font-mono text-[11px] text-space-mars/[.85] hidden sm:inline">{{
+                'world.mars.tag' | t
+              }}</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="stories" class="relative py-24 md:py-32 bg-space-main border-t border-subtle">
+    <div class="max-w-container mx-auto px-6 md:px-12 lg:px-16">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
+        <div>
+          <div class="inline-flex items-center gap-2 mb-3">
+            <span class="w-2 h-2 rounded-full bg-space-cyan"></span>
+            <span class="font-mono text-xs tracking-[0.22em] uppercase text-space-cyan">{{
+              'stories.eyebrow' | t
+            }}</span>
+          </div>
+          <h2
+            class="font-display font-bold uppercase text-3xl sm:text-4xl lg:text-5xl tracking-[0.08em] text-space-textMain"
+          >
+            {{ 'stories.title' | t }}
+          </h2>
+          <p class="mt-3 text-base sm:text-lg text-space-textMuted">{{ 'stories.subtitle' | t }}</p>
+        </div>
+
+        <div
+          class="inline-flex items-center p-1 rounded-lg bg-space-secondary border border-subtle self-start md:self-auto"
+        >
+          @for (f of filters; track f.mode) {
+            <button
+              type="button"
+              class="filter-btn"
+              [attr.data-filter]="f.mode"
+              [class.is-active]="filter.mode() === f.mode"
+              [attr.aria-pressed]="filter.mode() === f.mode"
+              (click)="filter.mode.set(f.mode)"
+            >
+              <span>{{ f.key | t }}</span>
+              @if (f.showCount) {
+                <span>({{ count(f.mode) }})</span>
+              }
+            </button>
+          }
+        </div>
+      </div>
+
+      <app-artifact-grid [artifacts]="visible()"></app-artifact-grid>
+
+      <div class="mt-14 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <button
+          type="button"
+          (click)="toggleAll()"
+          class="inline-flex items-center gap-3 px-8 py-4 rounded-lg bg-space-card hover:bg-space-cyan text-space-textMain hover:text-space-onAccent border border-cyan-subtle font-display font-bold text-sm tracking-[0.18em] uppercase glow-cyan transition-all duration-300"
+        >
+          <span>{{
+            (filter.mode() === 'all' ? 'stories.showFeatured' : 'stories.exploreAll') | t
+          }}</span>
+          <svg
+            class="w-4 h-4"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.2"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </button>
+        <a
+          routerLink="/archive"
+          class="font-mono text-xs tracking-[0.16em] uppercase text-space-textMuted hover:text-space-cyan transition-colors"
+          >{{ 'stories.archiveLink' | t }}</a
+        >
+      </div>
+    </div>
+  </section>
+
+  <section class="relative py-24 md:py-32 bg-space-secondary border-t border-subtle" id="legacy">
+    <div class="max-w-container mx-auto px-6 md:px-12 lg:px-16">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 mb-3">
+          <span class="w-2 h-2 rounded-full bg-space-cyan"></span>
+          <span class="font-mono text-xs tracking-[0.22em] uppercase text-space-cyan">{{
+            'legacy.eyebrow' | t
+          }}</span>
+        </div>
+        <h2
+          class="font-display font-bold uppercase text-3xl sm:text-4xl lg:text-5xl tracking-[0.08em] text-space-textMain"
+        >
+          {{ 'legacy.title' | t }}
+        </h2>
+        <p class="mt-4 text-base sm:text-lg text-space-textMuted">
+          {{ 'legacy.subtitle' | t }}
+        </p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div
+          class="rounded-xl bg-space-card border border-subtle hover:border-space-cyan/40 p-7 flex flex-col justify-between transition-all duration-300 group"
+        >
+          <div>
+            <div
+              class="w-12 h-12 rounded-lg bg-space-main border border-cyan-subtle flex items-center justify-center text-space-cyan mb-6 group-hover:scale-105 transition-transform"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </div>
+            <span class="font-mono text-[11px] tracking-[0.18em] text-space-cyan uppercase">{{
+              'legacy.c1.tag' | t
+            }}</span>
+            <h3
+              class="mt-2 font-display font-bold uppercase text-xl tracking-[0.06em] text-space-textMain"
+            >
+              {{ 'discoveries.title' | t }}
+            </h3>
+            <p class="mt-3 text-sm text-space-textMuted leading-relaxed">
+              {{ 'legacy.c1.desc' | t }}
+            </p>
+          </div>
+          <div
+            class="mt-6 pt-4 border-t border-subtle flex items-center justify-between font-mono text-[11px] text-space-textMuted"
+          >
+            <span>{{ 'legacy.c1.foot' | t }}</span>
+            <span class="text-space-cyan">●</span>
+          </div>
+        </div>
+        <div
+          class="rounded-xl bg-space-card border border-subtle hover:border-space-cyan/40 p-7 flex flex-col justify-between transition-all duration-300 group"
+        >
+          <div>
+            <div
+              class="w-12 h-12 rounded-lg bg-space-main border border-cyan-subtle flex items-center justify-center text-space-cyan mb-6 group-hover:scale-105 transition-transform"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                viewBox="0 0 24 24"
+              >
+                <circle cx="12" cy="12" r="9"></circle>
+                <path
+                  d="M3.6 9h16.8M3.6 15h16.8M11.5 3a17 17 0 000 18M12.5 3a17 17 0 010 18"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </div>
+            <span class="font-mono text-[11px] tracking-[0.18em] text-space-cyan uppercase">{{
+              'legacy.c2.tag' | t
+            }}</span>
+            <h3
+              class="mt-2 font-display font-bold uppercase text-xl tracking-[0.06em] text-space-textMain"
+            >
+              {{ 'legacy.c2.title' | t }}
+            </h3>
+            <p class="mt-3 text-sm text-space-textMuted leading-relaxed">
+              {{ 'legacy.c2.desc' | t }}
+            </p>
+          </div>
+          <div
+            class="mt-6 pt-4 border-t border-subtle flex items-center justify-between font-mono text-[11px] text-space-textMuted"
+          >
+            <span>{{ 'legacy.c2.foot' | t }}</span>
+            <span class="text-space-cyan">●</span>
+          </div>
+        </div>
+        <div
+          class="rounded-xl bg-space-card border border-subtle hover:border-space-cyan/40 p-7 flex flex-col justify-between transition-all duration-300 group"
+        >
+          <div>
+            <div
+              class="w-12 h-12 rounded-lg bg-space-main border border-cyan-subtle flex items-center justify-center text-space-cyan mb-6 group-hover:scale-105 transition-transform"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </div>
+            <span class="font-mono text-[11px] tracking-[0.18em] text-space-cyan uppercase">{{
+              'legacy.c3.tag' | t
+            }}</span>
+            <h3
+              class="mt-2 font-display font-bold uppercase text-xl tracking-[0.06em] text-space-textMain"
+            >
+              {{ 'legacy.c3.title' | t }}
+            </h3>
+            <p class="mt-3 text-sm text-space-textMuted leading-relaxed">
+              {{ 'legacy.c3.desc' | t }}
+            </p>
+          </div>
+          <div
+            class="mt-6 pt-4 border-t border-subtle flex items-center justify-between font-mono text-[11px] text-space-textMuted"
+          >
+            <span>{{ 'legacy.c3.foot' | t }}</span>
+            <span class="text-space-cyan">●</span>
+          </div>
+        </div>
+        <div
+          class="rounded-xl bg-space-card border border-subtle hover:border-space-cyan/40 p-7 flex flex-col justify-between transition-all duration-300 group"
+        >
+          <div>
+            <div
+              class="w-12 h-12 rounded-lg bg-space-main border border-cyan-subtle flex items-center justify-center text-space-cyan mb-6 group-hover:scale-105 transition-transform"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </div>
+            <span class="font-mono text-[11px] tracking-[0.18em] text-space-cyan uppercase">{{
+              'legacy.c4.tag' | t
+            }}</span>
+            <h3
+              class="mt-2 font-display font-bold uppercase text-xl tracking-[0.06em] text-space-textMain"
+            >
+              {{ 'legacy.c4.title' | t }}
+            </h3>
+            <p class="mt-3 text-sm text-space-textMuted leading-relaxed">
+              {{ 'legacy.c4.desc' | t }}
+            </p>
+          </div>
+          <div
+            class="mt-6 pt-4 border-t border-subtle flex items-center justify-between font-mono text-[11px] text-space-textMuted"
+          >
+            <span>{{ 'legacy.c4.foot' | t }}</span>
+            <span class="text-space-cyan">●</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

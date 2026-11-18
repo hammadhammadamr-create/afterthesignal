@@ -1,0 +1,36 @@
+:root {
+  --container-width: 1440px;
+  --transition-fast: 0.25s ease;
+}
+
+body.dark-theme {
+  --rgb-main: 8 13 24;
+  --rgb-secondary: 17 28 46;
+  --rgb-card: 20 32 51;
+
+  --rgb-cyan: 53 213 232;
+  --rgb-mars: 232 117 67;
+
+  --rgb-text: 244 247 251;
+  --rgb-muted: 167 180 199;
+  --rgb-on-accent: 8 13 24;
+
+  --rgb-border: 167 180 199;
+  color-scheme: dark;
+}
+
+body.white-theme {
+  --rgb-main: 240 243 248;
+  --rgb-secondary: 255 255 255;
+  --rgb-card: 255 255 255;
+
+  --rgb-cyan: 0 152 170;
+  --rgb-mars: 212 91 39;
+
+  --rgb-text: 15 23 42;
+  --rgb-muted: 71 85 105;
+  --rgb-on-accent: 255 255 255;
+
+  --rgb-border: 15 23 42;
+  color-scheme: light;
+}
